@@ -3,27 +3,27 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Urban Wilderness</title>
+    <title>Time to Grow</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- <link rel="manifest" href="site.webmanifest"> -->
-    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png">
+    <link rel="shortcut icon" type="image/x-icon" href="~/img/page-icon.png">
     <!-- Place favicon.ico in the root directory -->
     <!-- CSS here -->
     @Styles.Render("~/css/css")
 
     @*<link rel="stylesheet" href="~/css/bootstrap.min.css">
-    <link rel="stylesheet" href="~/css/owl.carousel.min.css">
-    <link rel="stylesheet" href="~/css/magnific-popup.css">
-    <link rel="stylesheet" href="~/css/font-awesome.min.css">
-    <link rel="stylesheet" href="~/css/themify-icons.css">
-    <link rel="stylesheet" href="~/css/nice-select.css">
-    <link rel="stylesheet" href="~/css/flaticon.css">
-    <link rel="stylesheet" href="~/css/gijgo.css">
-    <link rel="stylesheet" href="~/css/animate.css">
-    <link rel="stylesheet" href="~/css/slicknav.css">
-    <link rel="stylesheet" href="~/css/style.css">*@
+        <link rel="stylesheet" href="~/css/owl.carousel.min.css">
+        <link rel="stylesheet" href="~/css/magnific-popup.css">
+        <link rel="stylesheet" href="~/css/font-awesome.min.css">
+        <link rel="stylesheet" href="~/css/themify-icons.css">
+        <link rel="stylesheet" href="~/css/nice-select.css">
+        <link rel="stylesheet" href="~/css/flaticon.css">
+        <link rel="stylesheet" href="~/css/gijgo.css">
+        <link rel="stylesheet" href="~/css/animate.css">
+        <link rel="stylesheet" href="~/css/slicknav.css">
+        <link rel="stylesheet" href="~/css/style.css">*@
     <!-- <link rel="stylesheet" href="css/responsive.css"> -->
 </head>
 <body>
@@ -48,23 +48,38 @@
                                             <ul id="navigation">
                                                 <li><a class="active" href="~/Home/Index">home</a></li>
                                                 @*<li><a href="service.html">service</a></li>*@
+                                                <!--dropdown menu start-->
+                                                @*<div class="dropdown">
+                                                        <button class="btn btn-outline-warning dropdown-toggle" data-toggle="dropdown">Functions</button>
+                                                        <div class="dropdown-menu">
+                                                            <div class="dropdown-header">Functions</div>
+                                                            <a href="#" style="color:black" class="dropdown-item">function1</a>
+                                                            <a href="#" style="color:black" class="dropdown-item">function2</a>
+                                                            <a href="#" style="color:black" class="dropdown-item">function3</a>
+                                                            <div class="dropdown-divider"></div>
+                                                            <a href="#" style="color:black" class="dropdown-item">More</a>
+                                                        </div>
+                                                    </div>*@
+                                                <!--dropdown menu end-->
                                                 <li>
-                                                    <a href="#">blog <i class="ti-angle-down"></i></a>
+                                                    <a href="#">Functions @*<i class="ti-angle-down"></i>*@</a>
                                                     <ul class="submenu">
-                                                        <li><a href="blog.html">blog</a></li>
-                                                        <li><a href="single-blog.html">single-blog</a></li>
+                                                        <li><a href="blog.html">Function1</a></li>
+                                                        <li><a href="single-blog.html">Function2</a></li>
+                                                        <li><a href="#">Function3</a></li>
+                                                        <li><a href="#">Function4</a></li>
                                                     </ul>
                                                 </li>
                                                 <li>
-                                                    <a href="~/Home/About">about</a>
+                                                    <a href="~/Home/About">About us</a>
                                                 </li>
-                                                <li><a href="~/Home/Contact">Contact</a></li>
+                                                <li><a href="~/Home/Contact">Contact us</a></li>
                                             </ul>
                                         </nav>
                                     </div>
                                     <div class="book_room">
                                         <div class="book_btn">
-                                            <a class="popup-with-form" href="#test-form">Self test</a>
+                                            <a class="popup-with-form" href="#test-form">Search</a>
                                         </div>
                                     </div>
                                 </div>
@@ -83,7 +98,7 @@
         @RenderBody()
         <hr />
         <footer>
-            <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
+            <p>&copy; @DateTime.Now.Year - TP30 Starboys30 ASP.NET Application</p>
         </footer>
     </div>
     <!-- JS here -->
