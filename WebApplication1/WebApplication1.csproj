@@ -152,13 +152,13 @@
     <Content Include="Content\Site.css" />
     <Content Include="img\about\about_lft.png" />
     <Content Include="img\about\about_right.png" />
+    <Content Include="img\background\BG1.jpg" />
+    <Content Include="img\background\BG2.jpg" />
     <Content Include="img\background\BG3.jpg" />
     <Content Include="img\banner\banner_service.png" />
     <Content Include="img\banner\barber_text.png" />
     <Content Include="img\banner\bradcam.png" />
-    <Content Include="img\background\BG1.jpg" />
     <Content Include="img\banner\img.png" />
-    <Content Include="img\background\BG2.jpg" />
     <Content Include="img\banner\prise_bg.png" />
     <Content Include="img\blog\author.png" />
     <Content Include="img\blog\blog_1.png" />
@@ -207,7 +207,6 @@
     <Content Include="img\gallery\2.png" />
     <Content Include="img\gallery\3.png" />
     <Content Include="img\gallery\video.png" />
-    <Content Include="img\logo-icon.png" />
     <Content Include="img\logo.png" />
     <Content Include="img\offers\1.png" />
     <Content Include="img\offers\2.png" />
