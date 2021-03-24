@@ -164,6 +164,8 @@
     <Content Include="img\background\BG2.jpg" />
     <Content Include="img\background\BG3.jpg" />
     <Content Include="img\banner\banner_about.jpg" />
+    <Content Include="img\banner\banner_composting.jpg" />
+    <Content Include="img\banner\banner_recycle.jpg" />
     <Content Include="img\banner\banner_service.png" />
     <Content Include="img\banner\barber_text.png" />
     <Content Include="img\banner\bradcam.png" />
@@ -342,6 +344,9 @@
     <Content Include="scss\_team.scss" />
     <Content Include="scss\_testmonial.scss" />
     <Content Include="scss\_varriable.scss" />
+    <Content Include="Views\Home\Composting.cshtml" />
+    <Content Include="Views\Home\Recycle.cshtml" />
+    <Content Include="Views\Home\Explore.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />

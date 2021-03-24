@@ -26,5 +26,26 @@ namespace WebApplication1.Controllers
 
             return View();
         }
+
+        public ActionResult Composting()
+        {
+            ViewBag.Message = "Composting page.";
+
+            return View();
+        }
+
+        public ActionResult Recycle()
+        {
+            ViewBag.Message = "Recycle page.";
+
+            return View();
+        }
+
+        public ActionResult Explore()
+        {
+            ViewBag.Message = "Explore page.";
+
+            return View();
+        }
     }
 }
