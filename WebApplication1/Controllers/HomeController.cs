@@ -41,11 +41,11 @@ namespace WebApplication1.Controllers
             return View();
         }
 
-        public ActionResult Explore()
-        {
-            ViewBag.Message = "Explore page.";
+        //public ActionResult Explore()
+        //{
+        //    ViewBag.Message = "Explore page.";
 
-            return View();
-        }
+        //    return View();
+        //}
     }
 }

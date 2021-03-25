@@ -183,6 +183,9 @@
     <Content Include="img\blog\single_blog_4.png" />
     <Content Include="img\blog\single_blog_5.png" />
     <Content Include="img\blog\slide_thumb_1.png" />
+    <Content Include="img\Charts\chart1.png" />
+    <Content Include="img\Charts\chart2.png" />
+    <Content Include="img\Charts\chart3.png" />
     <Content Include="img\comment\comment_1.png" />
     <Content Include="img\comment\comment_2.png" />
     <Content Include="img\comment\comment_3.png" />
@@ -211,6 +214,10 @@
     <Content Include="img\elements\primary-radio.png" />
     <Content Include="img\elements\success-check.png" />
     <Content Include="img\elements\success-radio.png" />
+    <Content Include="img\Explore\explore1_small.png" />
+    <Content Include="img\Explore\explore2_large.png" />
+    <Content Include="img\Explore\orchard-1872997_1920.jpg" />
+    <Content Include="img\Explore\vegetables-752153_1920.jpg" />
     <Content Include="img\favicon.ico" />
     <Content Include="img\favicon.png" />
     <Content Include="img\footer-logo.png" />
