@@ -50,28 +50,28 @@
                                                 @*<li><a href="service.html">service</a></li>*@
                                                 <!--dropdown menu start-->
                                                 @*<div class="dropdown">
-            <button class="btn btn-outline-warning dropdown-toggle" data-toggle="dropdown">Functions</button>
-            <div class="dropdown-menu">
-                <div class="dropdown-header">Functions</div>
-                <a href="#" style="color:black" class="dropdown-item">function1</a>
-                <a href="#" style="color:black" class="dropdown-item">function2</a>
-                <a href="#" style="color:black" class="dropdown-item">function3</a>
-                <div class="dropdown-divider"></div>
-                <a href="#" style="color:black" class="dropdown-item">More</a>
-            </div>
-        </div>*@
+                                                        <button class="btn btn-outline-warning dropdown-toggle" data-toggle="dropdown">Functions</button>
+                                                        <div class="dropdown-menu">
+                                                            <div class="dropdown-header">Functions</div>
+                                                            <a href="#" style="color:black" class="dropdown-item">function1</a>
+                                                            <a href="#" style="color:black" class="dropdown-item">function2</a>
+                                                            <a href="#" style="color:black" class="dropdown-item">function3</a>
+                                                            <div class="dropdown-divider"></div>
+                                                            <a href="#" style="color:black" class="dropdown-item">More</a>
+                                                        </div>
+                                                    </div>*@
                                                 <!--dropdown menu end-->
-                                            <li>
-                                                <a href="#">Services @*<i class="ti-angle-down"></i>*@</a>
-                                                <ul class="submenu">
-                                                    <li><a href="~/Home/Recycle">Recycle</a></li>
-                                                    <li><a href="~/Home/Composting">Composting</a></li>
-                                                    @*<li><a href="#">Function3</a></li>
-                                                    <li><a href="#">Function4</a></li>*@
-                                                </ul>
-                                            </li>
+                                                <li>
+                                                    <a href="#">Services <i class="ti-angle-down"></i></a>
+                                                    <ul class="submenu">
+                                                        <li><a href="~/Home/Recycle">Recycle</a></li>
+                                                        <li><a href="~/Home/Composting">Composting</a></li>
+                                                        @*<li><a href="#">Function3</a></li>
+                                                            <li><a href="#">Function4</a></li>*@
+                                                    </ul>
+                                                </li>
                                                 @*<li><a href="~/Home/Recycle">Recycle</a></li>
-                                                <li><a href="~/Home/Composting">Composting</a></li>*@
+                                                    <li><a href="~/Home/Composting">Composting</a></li>*@
                                                 <li>
                                                     <a href="~/Home/About">About us</a>
                                                 </li>
@@ -80,10 +80,10 @@
                                         </nav>
                                     </div>
                                     @*<div class="book_room">
-                                        <div class="book_btn">
-                                            <a class="popup-with-form" href="#test-form">Search</a>
-                                        </div>
-                                    </div>*@
+                                            <div class="book_btn">
+                                                <a class="popup-with-form" href="#test-form">Search</a>
+                                            </div>
+                                        </div>*@
                                 </div>
                             </div>
                         </div>
@@ -116,7 +116,7 @@
                                 </div>
                                 <p class="address_text">
                                     Environmental protection is to conserve natural resources and the existing natural environment and, where possible, to repair damage and reverse trends.
-                                </p>                              
+                                </p>
                             </div>
                         </div>
                         <div class="col-xl-3 col-md-6 col-lg-3">
@@ -132,17 +132,17 @@
                             </div>
                         </div>
                         @*<div class="col-xl-2  col-md-6 col-lg-2">
-                            <div class="footer_widget">
-                                <h3 class="footer_title">
-                                    Services
-                                </h3>
-                                <ul class="links">
-                                    <li><a href="#">Smooth Shave </a></li>
-                                    <li><a href="#">Beard Triming</a></li>
-                                    <li><a href="#"> Haircut Styles</a></li>
-                                </ul>
-                            </div>
-                        </div>*@
+                                <div class="footer_widget">
+                                    <h3 class="footer_title">
+                                        Services
+                                    </h3>
+                                    <ul class="links">
+                                        <li><a href="#">Smooth Shave </a></li>
+                                        <li><a href="#">Beard Triming</a></li>
+                                        <li><a href="#"> Haircut Styles</a></li>
+                                    </ul>
+                                </div>
+                            </div>*@
                         <div class="col-xl-2  col-md-6 col-lg-2">
                             <div class="footer_widget">
                                 <h3 class="footer_title">
@@ -177,11 +177,14 @@
         </footer>
         <!-- footer_end  -->
         @*<footer>
-            <p>&copy; @DateTime.Now.Year - TP30 Starboys30 ASP.NET Application</p>
-        </footer>*@
+                <p>&copy; @DateTime.Now.Year - TP30 Starboys30 ASP.NET Application</p>
+            </footer>*@
     </div>
+
+    @Scripts.Render("~/bundles/js")
+    @Scripts.Render("~/bundles/contactJs")
     <!-- JS here -->
-    <script src="~/js/vendor/modernizr-3.5.0.min.js"></script>
+    @*<script src="~/js/vendor/modernizr-3.5.0.min.js"></script>
     <script src="~/js/vendor/jquery-1.12.4.min.js"></script>
     <script src="~/js/popper.min.js"></script>
     <script src="~/js/bootstrap.min.js"></script>
@@ -198,16 +201,16 @@
     <script src="~/js/jquery.slicknav.min.js"></script>
     <script src="~/js/jquery.magnific-popup.min.js"></script>
     <script src="~/js/plugins.js"></script>
-    <script src="~/js/gijgo.min.js"></script>
+    <script src="~/js/gijgo.min.js"></script>*@
 
     <!--contact js-->
-    <script src="~/js/contact.js"></script>
+    @*<script src="~/js/contact.js"></script>
     <script src="~/js/jquery.ajaxchimp.min.js"></script>
     <script src="~/js/jquery.form.js"></script>
     <script src="~/js/jquery.validate.min.js"></script>
     <script src="~/js/mail-script.js"></script>
 
-    <script src="~/js/main.js"></script>
+    <script src="~/js/main.js"></script>*@
     <script>
         $('#datepicker').datepicker({
             iconsLibrary: 'fontawesome',
