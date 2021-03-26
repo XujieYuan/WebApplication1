@@ -1,17 +1,17 @@
-﻿CREATE TABLE [dbo].[Users] (
+﻿CREATE TABLE [dbo].[House_categery] (
     [Id] int IDENTITY(1,1) NOT NULL,
-    [First_name] nvarchar(max)  NOT NULL,
-    [Last_name] nvarchar(max)  NOT NULL,
-    [Address] nvarchar(max)  NOT NULL
+    [Type] nvarchar(max)  NOT NULL,
+    [Quantity] int  NOT NULL
 );
 GO
 
--- Creating table 'Bookings'
-CREATE TABLE [dbo].[Bookings] (
+-- Creating table 'Tips'
+CREATE TABLE [dbo].[Tips] (
     [Id] int IDENTITY(1,1) NOT NULL,
-    [Email] nvarchar(max)  NOT NULL,
-    [Time] datetime  NOT NULL,
-    [UserId] int  NOT NULL
+    [Title] nvarchar(max)  NOT NULL,
+    [Img_src] nvarchar(max)  NOT NULL,
+    [Content] nvarchar(max)  NOT NULL,
+    [House_categeryId] int  NOT NULL
 );
 GO
 
@@ -19,15 +19,15 @@ GO
 -- Creating all PRIMARY KEY constraints
 -- --------------------------------------------------
 
--- Creating primary key on [Id] in table 'Users'
-ALTER TABLE [dbo].[Users]
-ADD CONSTRAINT [PK_Users]
+-- Creating primary key on [Id] in table 'House_categery'
+ALTER TABLE [dbo].[House_categery]
+ADD CONSTRAINT [PK_House_categery]
     PRIMARY KEY CLUSTERED ([Id] ASC);
 GO
 
--- Creating primary key on [Id] in table 'Bookings'
-ALTER TABLE [dbo].[Bookings]
-ADD CONSTRAINT [PK_Bookings]
+-- Creating primary key on [Id] in table 'Tips'
+ALTER TABLE [dbo].[Tips]
+ADD CONSTRAINT [PK_Tips]
     PRIMARY KEY CLUSTERED ([Id] ASC);
 GO
 
@@ -35,17 +35,17 @@ GO
 -- Creating all FOREIGN KEY constraints
 -- --------------------------------------------------
 
--- Creating foreign key on [UserId] in table 'Bookings'
-ALTER TABLE [dbo].[Bookings]
-ADD CONSTRAINT [FK_UserBooking]
-    FOREIGN KEY ([UserId])
-    REFERENCES [dbo].[Users]
+-- Creating foreign key on [House_categeryId] in table 'Tips'
+ALTER TABLE [dbo].[Tips]
+ADD CONSTRAINT [FK_House_categeryTip]
+    FOREIGN KEY ([House_categeryId])
+    REFERENCES [dbo].[House_categery]
         ([Id])
     ON DELETE NO ACTION ON UPDATE NO ACTION;
 GO
 
--- Creating non-clustered index for FOREIGN KEY 'FK_UserBooking'
-CREATE INDEX [IX_FK_UserBooking]
-ON [dbo].[Bookings]
-    ([UserId]);
+-- Creating non-clustered index for FOREIGN KEY 'FK_House_categeryTip'
+CREATE INDEX [IX_FK_House_categeryTip]
+ON [dbo].[Tips]
+    ([House_categeryId]);
 GO
