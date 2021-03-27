@@ -396,8 +396,8 @@ h3 {
     /* line 39, ../../Arafath/CL/january 2020/238. Barber/HTML/scss/_btn.scss */
     .boxed-btn3:hover {
         background: transparent;
-        color: #ffffff;
-        border: 1px solid #ffffff;
+        color: #3dd96e;
+        border: 1px solid #3dd96e;
     }
 
     /* line 44, ../../Arafath/CL/january 2020/238. Barber/HTML/scss/_btn.scss */
@@ -1971,7 +1971,8 @@ h3 {
 
 /* line 53, ../../Arafath/CL/january 2020/238. Barber/HTML/scss/_testmonial.scss */
 .testimonial_area .owl-carousel .owl-nav div {
-    left: 0;
+    /*left: 0;*/
+    left: 70px;
     background: #000;
     width: 34px;
     height: 34px;

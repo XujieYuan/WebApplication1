@@ -219,6 +219,8 @@
     <Content Include="img\Charts\chart1.png" />
     <Content Include="img\Charts\chart2.png" />
     <Content Include="img\Charts\chart3.png" />
+    <Content Include="img\Charts\chart4.jpg" />
+    <Content Include="img\Charts\chart5.jpg" />
     <Content Include="img\comment\comment_1.png" />
     <Content Include="img\comment\comment_2.png" />
     <Content Include="img\comment\comment_3.png" />
@@ -250,7 +252,11 @@
     <Content Include="img\Explore\explore1_small.png" />
     <Content Include="img\Explore\explore2_large.png" />
     <Content Include="img\Explore\orchard-1872997_1920.jpg" />
+    <Content Include="img\Explore\pollution-3441119_1920.jpg" />
+    <Content Include="img\Explore\scrap-iron-404081_1920.jpg" />
     <Content Include="img\Explore\vegetables-752153_1920.jpg" />
+    <Content Include="img\Explore\waste_large.png" />
+    <Content Include="img\Explore\waste_small.png" />
     <Content Include="img\favicon.ico" />
     <Content Include="img\favicon.png" />
     <Content Include="img\footer-logo.png" />
