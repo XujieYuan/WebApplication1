@@ -25,7 +25,7 @@ namespace WebApplication1.Models
             throw new UnintentionalCodeFirstException();
         }
     
-        public virtual DbSet<House_categery> House_categery { get; set; }
+        public virtual DbSet<House_category> House_category { get; set; }
         public virtual DbSet<Tip> Tips { get; set; }
     }
 }

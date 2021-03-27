@@ -10,107 +10,107 @@ using WebApplication1.Models;
 
 namespace WebApplication1.Controllers
 {
-    public class House_categeryController : Controller
+    public class House_categoryController : Controller
     {
         private Model1Container2 db = new Model1Container2();
 
-        // GET: House_categery
+        // GET: House_category
         public ActionResult Index()
         {
-            return View(db.House_categery.ToList());
+            return View(db.House_category.ToList());
         }
 
-        // GET: House_categery/Details/5
+        // GET: House_category/Details/5
         public ActionResult Details(int? id)
         {
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            House_categery house_categery = db.House_categery.Find(id);
-            if (house_categery == null)
+            House_category house_category = db.House_category.Find(id);
+            if (house_category == null)
             {
                 return HttpNotFound();
             }
-            return View(house_categery);
+            return View(house_category);
         }
 
-        // GET: House_categery/Create
+        // GET: House_category/Create
         public ActionResult Create()
         {
             return View();
         }
 
-        // POST: House_categery/Create
+        // POST: House_category/Create
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "Id,Type,Quantity")] House_categery house_categery)
+        public ActionResult Create([Bind(Include = "Id,Type,Quantity")] House_category house_category)
         {
             if (ModelState.IsValid)
             {
-                db.House_categery.Add(house_categery);
+                db.House_category.Add(house_category);
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
 
-            return View(house_categery);
+            return View(house_category);
         }
 
-        // GET: House_categery/Edit/5
+        // GET: House_category/Edit/5
         public ActionResult Edit(int? id)
         {
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            House_categery house_categery = db.House_categery.Find(id);
-            if (house_categery == null)
+            House_category house_category = db.House_category.Find(id);
+            if (house_category == null)
             {
                 return HttpNotFound();
             }
-            return View(house_categery);
+            return View(house_category);
         }
 
-        // POST: House_categery/Edit/5
+        // POST: House_category/Edit/5
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "Id,Type,Quantity")] House_categery house_categery)
+        public ActionResult Edit([Bind(Include = "Id,Type,Quantity")] House_category house_category)
         {
             if (ModelState.IsValid)
             {
-                db.Entry(house_categery).State = EntityState.Modified;
+                db.Entry(house_category).State = EntityState.Modified;
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
-            return View(house_categery);
+            return View(house_category);
         }
 
-        // GET: House_categery/Delete/5
+        // GET: House_category/Delete/5
         public ActionResult Delete(int? id)
         {
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            House_categery house_categery = db.House_categery.Find(id);
-            if (house_categery == null)
+            House_category house_category = db.House_category.Find(id);
+            if (house_category == null)
             {
                 return HttpNotFound();
             }
-            return View(house_categery);
+            return View(house_category);
         }
 
-        // POST: House_categery/Delete/5
+        // POST: House_category/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public ActionResult DeleteConfirmed(int id)
         {
-            House_categery house_categery = db.House_categery.Find(id);
-            db.House_categery.Remove(house_categery);
+            House_category house_category = db.House_category.Find(id);
+            db.House_category.Remove(house_category);
             db.SaveChanges();
             return RedirectToAction("Index");
         }

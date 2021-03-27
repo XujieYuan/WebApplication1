@@ -129,12 +129,12 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\HomeController.cs" />
-    <Compile Include="Controllers\House_categeryController.cs" />
+    <Compile Include="Controllers\House_categoryController.cs" />
     <Compile Include="Controllers\TipsController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Models\House_categery.cs">
+    <Compile Include="Models\House_category.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\Model1.Context.cs">
@@ -442,11 +442,12 @@
     <Content Include="Views\Home\Composting.cshtml" />
     <Content Include="Views\Home\Recycle.cshtml" />
     <Content Include="Views\Home\Explore.cshtml" />
-    <Content Include="Views\House_categery\Create.cshtml" />
-    <Content Include="Views\House_categery\Delete.cshtml" />
-    <Content Include="Views\House_categery\Details.cshtml" />
-    <Content Include="Views\House_categery\Edit.cshtml" />
-    <Content Include="Views\House_categery\Index.cshtml" />
+    <Content Include="Views\Home\test.cshtml" />
+    <Content Include="Views\House_category\Create.cshtml" />
+    <Content Include="Views\House_category\Delete.cshtml" />
+    <Content Include="Views\House_category\Details.cshtml" />
+    <Content Include="Views\House_category\Edit.cshtml" />
+    <Content Include="Views\House_category\Index.cshtml" />
     <Content Include="Views\Tips\Create.cshtml" />
     <Content Include="Views\Tips\Delete.cshtml" />
     <Content Include="Views\Tips\Details.cshtml" />

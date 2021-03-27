@@ -5,8 +5,8 @@
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
       <Diagram DiagramId="12bf8895b1594f2994cad1925fc398c9" Name="Diagram1" >
-        <EntityTypeShape EntityType="Model1.House_categery" Width="1.5" PointX="5.5" PointY="1.5" />
-        <EntityTypeShape EntityType="Model1.Tip" Width="1.5" PointX="8.625" PointY="1.5" />
+        <EntityTypeShape EntityType="Model1.House_category" Width="1.5" PointX="5.5" PointY="1.5" />
+        <EntityTypeShape EntityType="Model1.Tip" Width="1.5" PointX="8.125" PointY="1.5" />
         <AssociationConnector Association="Model1.House_categeryTip" />
       </Diagram>
     </edmx:Diagrams>

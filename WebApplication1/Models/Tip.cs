@@ -19,7 +19,8 @@ namespace WebApplication1.Models
         public string Img_src { get; set; }
         public string Content { get; set; }
         public int House_categeryId { get; set; }
+        public string Description { get; set; }
     
-        public virtual House_categery House_categery { get; set; }
+        public virtual House_category House_categery { get; set; }
     }
 }

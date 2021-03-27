@@ -6,14 +6,14 @@
     <edmx:StorageModels>
     <Schema Namespace="Model1.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2012" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
   <EntityContainer Name="Model1StoreContainer">
-    <EntitySet Name="House_categery" EntityType="Model1.Store.House_categery" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="House_category" EntityType="Model1.Store.House_category" store:Type="Tables" Schema="dbo" />
     <EntitySet Name="Tips" EntityType="Model1.Store.Tips" store:Type="Tables" Schema="dbo" />
     <AssociationSet Name="House_categeryTip" Association="Model1.Store.House_categeryTip">
-      <End Role="House_categery" EntitySet="House_categery" />
+      <End Role="House_categery" EntitySet="House_category" />
       <End Role="Tip" EntitySet="Tips" />
     </AssociationSet>
   </EntityContainer>
-  <EntityType Name="House_categery">
+  <EntityType Name="House_category">
     <Key>
       <PropertyRef Name="Id" />
     </Key>
@@ -30,9 +30,10 @@
     <Property Name="Img_src" Type="nvarchar(max)" Nullable="false" />
     <Property Name="Content" Type="nvarchar(max)" Nullable="false" />
     <Property Name="House_categeryId" Type="int" Nullable="false" />
+    <Property Name="Description" Type="nvarchar(max)" Nullable="true" />
   </EntityType>
   <Association Name="House_categeryTip">
-    <End Role="House_categery" Type="Model1.Store.House_categery" Multiplicity="1" />
+    <End Role="House_categery" Type="Model1.Store.House_category" Multiplicity="1" />
     <End Role="Tip" Type="Model1.Store.Tips" Multiplicity="*" />
     <ReferentialConstraint>
       <Principal Role="House_categery">
@@ -48,14 +49,14 @@
     <edmx:ConceptualModels>
       <Schema xmlns="http://schemas.microsoft.com/ado/2009/11/edm" xmlns:cg="http://schemas.microsoft.com/ado/2006/04/codegeneration" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" Namespace="Model1" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" annotation:UseStrongSpatialTypes="false">
         <EntityContainer Name="Model1Container2" annotation:LazyLoadingEnabled="true">
-          <EntitySet Name="House_categery" EntityType="Model1.House_categery" />
+          <EntitySet Name="House_category" EntityType="Model1.House_category" />
           <EntitySet Name="Tips" EntityType="Model1.Tip" />
           <AssociationSet Name="House_categeryTip" Association="Model1.House_categeryTip">
-            <End Role="House_categery" EntitySet="House_categery" />
+            <End Role="House_categery" EntitySet="House_category" />
             <End Role="Tip" EntitySet="Tips" />
           </AssociationSet>
         </EntityContainer>
-        <EntityType Name="House_categery">
+        <EntityType Name="House_category">
           <Key>
             <PropertyRef Name="Id" />
           </Key>
@@ -74,9 +75,10 @@
           <Property Name="Content" Type="String" Nullable="false" />
           <NavigationProperty Name="House_categery" Relationship="Model1.House_categeryTip" FromRole="Tip" ToRole="House_categery" />
           <Property Name="House_categeryId" Type="Int32" Nullable="false" />
+          <Property Name="Description" Type="String" Nullable="true" />
         </EntityType>
         <Association Name="House_categeryTip">
-          <End Type="Model1.House_categery" Role="House_categery" Multiplicity="1" />
+          <End Type="Model1.House_category" Role="House_categery" Multiplicity="1" />
           <End Type="Model1.Tip" Role="Tip" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="House_categery">
@@ -93,9 +95,9 @@
     <edmx:Mappings>
     <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
   <EntityContainerMapping StorageEntityContainer="Model1StoreContainer" CdmEntityContainer="Model1Container2">
-    <EntitySetMapping Name="House_categery">
-      <EntityTypeMapping TypeName="IsTypeOf(Model1.House_categery)">
-        <MappingFragment StoreEntitySet="House_categery">
+    <EntitySetMapping Name="House_category">
+      <EntityTypeMapping TypeName="IsTypeOf(Model1.House_category)">
+        <MappingFragment StoreEntitySet="House_category">
           <ScalarProperty Name="Id" ColumnName="Id" />
           <ScalarProperty Name="Type" ColumnName="Type" />
           <ScalarProperty Name="Quantity" ColumnName="Quantity" />
@@ -110,6 +112,7 @@
           <ScalarProperty Name="Img_src" ColumnName="Img_src" />
           <ScalarProperty Name="Content" ColumnName="Content" />
           <ScalarProperty Name="House_categeryId" ColumnName="House_categeryId" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>

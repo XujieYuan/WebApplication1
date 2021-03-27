@@ -12,10 +12,10 @@ namespace WebApplication1.Models
     using System;
     using System.Collections.Generic;
     
-    public partial class House_categery
+    public partial class House_category
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public House_categery()
+        public House_category()
         {
             this.Tips = new HashSet<Tip>();
         }

@@ -39,7 +39,7 @@ namespace WebApplication1.Controllers
         // GET: Tips/Create
         public ActionResult Create()
         {
-            ViewBag.House_categeryId = new SelectList(db.House_categery, "Id", "Type");
+            ViewBag.House_categeryId = new SelectList(db.House_category, "Id", "Type");
             return View();
         }
 
@@ -48,7 +48,7 @@ namespace WebApplication1.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "Id,Title,Img_src,Content,House_categeryId")] Tip tip)
+        public ActionResult Create([Bind(Include = "Id,Title,Img_src,Content,House_categeryId,Description")] Tip tip)
         {
             if (ModelState.IsValid)
             {
@@ -57,7 +57,7 @@ namespace WebApplication1.Controllers
                 return RedirectToAction("Index");
             }
 
-            ViewBag.House_categeryId = new SelectList(db.House_categery, "Id", "Type", tip.House_categeryId);
+            ViewBag.House_categeryId = new SelectList(db.House_category, "Id", "Type", tip.House_categeryId);
             return View(tip);
         }
 
@@ -73,7 +73,7 @@ namespace WebApplication1.Controllers
             {
                 return HttpNotFound();
             }
-            ViewBag.House_categeryId = new SelectList(db.House_categery, "Id", "Type", tip.House_categeryId);
+            ViewBag.House_categeryId = new SelectList(db.House_category, "Id", "Type", tip.House_categeryId);
             return View(tip);
         }
 
@@ -82,7 +82,7 @@ namespace WebApplication1.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "Id,Title,Img_src,Content,House_categeryId")] Tip tip)
+        public ActionResult Edit([Bind(Include = "Id,Title,Img_src,Content,House_categeryId,Description")] Tip tip)
         {
             if (ModelState.IsValid)
             {
@@ -90,7 +90,7 @@ namespace WebApplication1.Controllers
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
-            ViewBag.House_categeryId = new SelectList(db.House_categery, "Id", "Type", tip.House_categeryId);
+            ViewBag.House_categeryId = new SelectList(db.House_category, "Id", "Type", tip.House_categeryId);
             return View(tip);
         }
 
