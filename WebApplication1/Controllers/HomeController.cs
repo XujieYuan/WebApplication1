@@ -40,26 +40,19 @@ namespace WebApplication1.Controllers
 
             return View();
         }
-
-        //public ActionResult Explore()
+    
+        //public ActionResult TipEdit()
         //{
-        //    ViewBag.Message = "Explore page.";
+        //    ViewBag.Message = "Tip Edit page.";
 
         //    return View();
         //}
 
-        public ActionResult TipEdit()
-        {
-            ViewBag.Message = "Tip Edit page.";
+        //public ActionResult CategoryEdit()
+        //{
+        //    ViewBag.Message = "Category Edit page.";
 
-            return View();
-        }
-
-        public ActionResult CategoryEdit()
-        {
-            ViewBag.Message = "Category Edit page.";
-
-            return View();
-        }
+        //    return View();
+        //}
     }
 }
