@@ -439,9 +439,9 @@
     <Content Include="scss\_team.scss" />
     <Content Include="scss\_testmonial.scss" />
     <Content Include="scss\_varriable.scss" />
-    <Content Include="Views\Home\Composting.cshtml" />
-    <Content Include="Views\Home\Recycle.cshtml" />
-    <Content Include="Views\Home\Explore.cshtml" />
+    <Content Include="Views\Home\MedicalWaste.cshtml" />
+    <Content Include="Views\Home\GreenWaste.cshtml" />
+    <Content Include="Views\Home\LSWaste.cshtml" />
     <Content Include="Views\Home\test.cshtml" />
     <Content Include="Views\House_category\Create.cshtml" />
     <Content Include="Views\House_category\Delete.cshtml" />

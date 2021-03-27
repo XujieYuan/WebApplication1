@@ -38,10 +38,10 @@
                                     @Html.DisplayFor(modelItem => item.Content)
                                 </p>
                                 <ul class="blog-info-link">
-                                    <li><a href="#"><i class="fa fa-user"></i> Travel, Lifestyle</a></li>
-                                    <li><a href="#"><i class="fa fa-comments"></i> 03 Comments</a></li>
-                                    @*<li> Travel, Lifestyle</li>
-                                        <li> 03 Comments</li>*@
+                                    @*<li><a href="#"><i class="fa fa-user"></i> Travel, Lifestyle</a></li>
+                                    <li><a href="#"><i class="fa fa-comments"></i> 03 Comments</a></li>*@
+                                    <li> House Type: @Html.DisplayFor(modelItem => item.House_categery.Type)</li>
+                                    <li> Description: @Html.DisplayFor(modelItem => item.Description)</li>
                                 </ul>
                             </div>
                         </article>
@@ -182,7 +182,7 @@
             <div class="col-lg-4">
                 <div class="blog_right_sidebar">
                     <!--search button-->
-                    @*<aside class="single_sidebar_widget search_widget">
+                    <aside class="single_sidebar_widget search_widget">
                             <form action="#">
                                 <div class="form-group">
                                     <div class="input-group mb-3">
@@ -199,7 +199,7 @@
                                     Search
                                 </button>
                             </form>
-                        </aside>*@
+                        </aside>
 
                     <aside class="single_sidebar_widget post_category_widget">
                         <h4 class="widget_title">Category</h4>

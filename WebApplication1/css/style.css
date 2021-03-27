@@ -2764,6 +2764,26 @@ h3 {
     background-image: url(../img/banner/banner_composting.jpg);
 }
 
+.breadcam_bg_3 {
+    background-image: url(../img/Explore/LS.jpg);
+}
+
+.breadcam_bg_4 {
+    background-image: url(../img/Explore/medical.jpg);
+}
+
+.breadcam_bg_5 {
+    background-image: url(../img/Explore/ewaste.jpg);
+}
+
+.breadcam_bg_6 {
+    background-image: url(../img/Explore/construction.jpg);
+}
+
+.breadcam_bg_7 {
+    background-image: url(../img/Explore/garden-waste-1047259_1920.jpg);
+}
+
 /* line 10, ../../Arafath/CL/january 2020/238. Barber/HTML/scss/_bradcam.scss */
 .bradcam_area {
     background-size: cover;

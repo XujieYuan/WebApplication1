@@ -40,13 +40,27 @@ namespace WebApplication1.Controllers
 
             return View();
         }
-    
-        //public ActionResult TipEdit()
-        //{
-        //    ViewBag.Message = "Tip Edit page.";
 
-        //    return View();
-        //}
+        public ActionResult LSWaste()
+        {
+            ViewBag.Message = "Liquid or solid household waste page.";
+
+            return View();
+        }
+
+        public ActionResult MedicalWaste()
+        {
+            ViewBag.Message = "Medical waste page.";
+
+            return View();
+        }
+
+        public ActionResult GreenWaste()
+        {
+            ViewBag.Message = "Green waste page.";
+
+            return View();
+        }
 
         //public ActionResult CategoryEdit()
         //{
