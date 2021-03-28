@@ -128,5 +128,19 @@ namespace WebApplication1.Controllers
             }
             base.Dispose(disposing);
         }
+
+        public ActionResult Tip1()
+        {
+            ViewBag.Message = "Tip 1 page.";
+
+            return View();
+        }
+
+        public ActionResult Tip2()
+        {
+            ViewBag.Message = "Tip 2 page.";
+
+            return View();
+        }
     }
 }

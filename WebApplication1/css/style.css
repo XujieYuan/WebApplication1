@@ -2784,6 +2784,14 @@ h3 {
     background-image: url(../img/Explore/garden-waste-1047259_1920.jpg);
 }
 
+.breadcam_bg_8 {
+    background-image: url(../img/Tip/tip1.jpg);
+}
+
+.breadcam_bg_9 {
+    background-image: url(../img/Tip/tip2.jpg);
+}
+
 /* line 10, ../../Arafath/CL/january 2020/238. Barber/HTML/scss/_bradcam.scss */
 .bradcam_area {
     background-size: cover;
@@ -5177,7 +5185,8 @@ h6 {
 
 /* line 660, ../../Arafath/CL/january 2020/238. Barber/HTML/scss/_blog.scss */
 .blog_right_sidebar .single_sidebar_widget {
-    background: #fbf9ff;
+    /*background: #fbf9ff;*/
+    background: #edf5e9;
     padding: 30px;
     margin-bottom: 30px;
 }
