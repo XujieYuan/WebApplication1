@@ -55,18 +55,25 @@ namespace WebApplication1.Controllers
             return View();
         }
 
+        public ActionResult EWaste()
+        {
+            ViewBag.Message = "Electronic waste page.";
+
+            return View();
+        }
+
+        public ActionResult ConstructionDebris()
+        {
+            ViewBag.Message = "Construction waste page.";
+
+            return View();
+        }
+
         public ActionResult GreenWaste()
         {
             ViewBag.Message = "Green waste page.";
 
             return View();
-        }
-
-        //public ActionResult CategoryEdit()
-        //{
-        //    ViewBag.Message = "Category Edit page.";
-
-        //    return View();
-        //}
+        }       
     }
 }
