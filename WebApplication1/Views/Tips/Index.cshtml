@@ -45,7 +45,7 @@
                                     @Html.DisplayFor(modelItem => item.Content)
                                 </p>
                                 <ul class="blog-info-link">
-                                    <li><i class="fa fa-user"></i> @Html.DisplayFor(modelItem => item.House_categery.Type)</li>
+                                    <li><i class="fa fa-user"></i> @Html.DisplayFor(modelItem => item.House_category.Type)</li>
                                     <li><i class="fa fa-comments"></i> @Html.DisplayFor(modelItem => item.Description)</li>
                                 </ul>
                             </div>
@@ -82,8 +82,8 @@
                             {
                             <li>
                                 <a href="#" class="d-flex">
-                                    <p>@item.House_categery.Type</p>
-                                    <p>(@item.House_categery.Quantity)</p>
+                                    <p>@item.House_category.Type</p>
+                                    <p>(@item.House_category.Quantity)</p>
                                 </a>
                             </li>
                             }                                
@@ -170,7 +170,7 @@
             @Html.DisplayNameFor(model => model.Content)
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.House_categery.Type)
+            @Html.DisplayNameFor(model => model.House_category.Type)
         </th>
         <th></th>
     </tr>
@@ -188,7 +188,7 @@
                 @Html.DisplayFor(modelItem => item.Content)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.House_categery.Type)
+                @Html.DisplayFor(modelItem => item.House_category.Type)
             </td>
             <td>
                 @Html.ActionLink("Edit", "Edit", new { id = item.Id }) |

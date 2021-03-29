@@ -41,6 +41,13 @@ namespace WebApplication1.Controllers
             return View();
         }
 
+        public ActionResult Waste()
+        {
+            ViewBag.Message = "All Waste page.";
+
+            return View();
+        }
+
         public ActionResult LSWaste()
         {
             ViewBag.Message = "Liquid or solid household waste page.";

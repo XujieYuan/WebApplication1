@@ -155,12 +155,17 @@
     <Compile Include="Models\Tip.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
+    <Compile Include="Models\webModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="App_Data\Database1.mdf" />
     <Content Include="App_Data\Database1_log.ldf">
       <DependentUpon>Database1.mdf</DependentUpon>
+    </Content>
+    <Content Include="App_Data\webDatabase.mdf" />
+    <Content Include="App_Data\webDatabase_log.ldf">
+      <DependentUpon>webDatabase.mdf</DependentUpon>
     </Content>
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
@@ -251,6 +256,7 @@
     <Content Include="img\elements\success-radio.png" />
     <Content Include="img\Explore\construction.jpg" />
     <Content Include="img\Explore\cons_sm.png" />
+    <Content Include="img\Explore\contact.jpg" />
     <Content Include="img\Explore\ewaste.jpg" />
     <Content Include="img\Explore\ewaste_sm.png" />
     <Content Include="img\Explore\explore1_small.png" />
@@ -310,6 +316,7 @@
     <Content Include="img\team\team3.png" />
     <Content Include="img\team\team4.png" />
     <Content Include="img\team\team5.png" />
+    <Content Include="img\team\team6.jpg" />
     <Content Include="img\testmonial\1.png" />
     <Content Include="img\Tip\tip1.jpg" />
     <Content Include="img\Tip\tip4.jpg" />
@@ -389,6 +396,7 @@
     <Content Include="Models\Model1.edmx.diagram">
       <DependentUpon>Model1.edmx</DependentUpon>
     </Content>
+    <None Include="Properties\PublishProfiles\IETimeToGrow - Web Deploy.pubxml" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
     <Content Include="Scripts\jquery-3.4.1.min.js" />
@@ -457,6 +465,7 @@
     <Content Include="Views\Home\ConstructionDebris.cshtml" />
     <Content Include="Views\Tips\Tip1.cshtml" />
     <Content Include="Views\Tips\Tip2.cshtml" />
+    <Content Include="Views\Home\Waste.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />

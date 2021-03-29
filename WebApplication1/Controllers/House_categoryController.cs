@@ -12,7 +12,8 @@ namespace WebApplication1.Controllers
 {
     public class House_categoryController : Controller
     {
-        private Model1Container2 db = new Model1Container2();
+        //private Model1Container2 db = new Model1Container2();
+        private webModel db = new webModel();
 
         // GET: House_category
         public ActionResult Index()

@@ -12,12 +12,12 @@ namespace WebApplication1.Controllers
 {
     public class TipsController : Controller
     {
-        private Model1Container2 db = new Model1Container2();
-
+        //private Model1Container2 db = new Model1Container2();
+        private webModel db = new webModel();
         // GET: Tips
         public ActionResult Index()
         {
-            var tips = db.Tips.Include(t => t.House_categery);
+            var tips = db.Tips.Include(t => t.House_category);
             return View(tips.ToList());
         }
 
