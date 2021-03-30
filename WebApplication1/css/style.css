@@ -2448,8 +2448,8 @@ h3 {
 
     /* line 9, ../../Arafath/CL/january 2020/238. Barber/HTML/scss/_footer.scss */
     .footer .footer_top {
-        padding-top: 130px;
-        padding-bottom: 110px;
+        padding-top: 40px;
+        padding-bottom: 20px;
     }
 
 @media (max-width: 767px) {
@@ -2688,7 +2688,7 @@ h3 {
 
 /* line 186, ../../Arafath/CL/january 2020/238. Barber/HTML/scss/_footer.scss */
 .footer .copy-right_text {
-    padding-bottom: 32px;
+    padding-bottom: 20px;
 }
 
     /* line 188, ../../Arafath/CL/january 2020/238. Barber/HTML/scss/_footer.scss */
