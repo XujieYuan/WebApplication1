@@ -230,6 +230,8 @@
     <Content Include="img\Charts\chart3.png" />
     <Content Include="img\Charts\chart4.jpg" />
     <Content Include="img\Charts\chart5.jpg" />
+    <Content Include="img\Charts\chart6.png" />
+    <Content Include="img\Charts\chart7.png" />
     <Content Include="img\comment\comment_1.png" />
     <Content Include="img\comment\comment_2.png" />
     <Content Include="img\comment\comment_3.png" />
