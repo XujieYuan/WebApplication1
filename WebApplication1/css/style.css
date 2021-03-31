@@ -5046,7 +5046,7 @@ h6 {
 @media (min-width: 768px) {
     /* line 529, ../../Arafath/CL/january 2020/238. Barber/HTML/scss/_blog.scss */
     .blog_details {
-        padding: 60px 30px 35px 35px;
+        padding: 30px 30px 35px 35px;
     }
 }
 
@@ -5465,7 +5465,7 @@ h6 {
     /* line 1077, ../../Arafath/CL/january 2020/238. Barber/HTML/scss/_blog.scss */
     .single-post-area .blog_details p {
         margin-bottom: 20px;
-        font-size: 15px;
+        font-size: 17px;
     }
 
 /* line 1087, ../../Arafath/CL/january 2020/238. Barber/HTML/scss/_blog.scss */
