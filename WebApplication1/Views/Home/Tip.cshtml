@@ -1,6 +1,4 @@
-﻿@model IEnumerable<WebApplication1.Models.Tip>
-
-@*@{
+﻿@*@{
         ViewBag.Title = "Index";
         Layout = "~/Views/Shared/_Layout.cshtml";
     }*@
@@ -18,7 +16,7 @@
 <!-- bradcam_area_end -->
 @*<h2>Index</h2>*@
 
-<!--================Tips Area start=================-->
+<!--================Tip Area start=================-->
 <section class="blog_area section-padding" style="padding-top: 60px;padding-bottom: 0px;">
     <div class="container">
         <div class="row">
@@ -26,16 +24,16 @@
                 <div class="blog_left_sidebar">
                     <article class="blog_item">
                         <div class="blog_item_img">
-                            <a href="~/Tips/Tip1"><img class="card-img rounded-0" src="~/img/Tip/tip1.jpg" alt="" style="height: 365px;"></a>
+                            <a href="~/Home/Tip1"><img class="card-img rounded-0" src="~/img/Tip/tip1.jpg" alt="" style="height: 365px;"></a>
                         </div>
                         <div class="blog_details">
-                            <a class="d-inline-block" href="~/Tips/Tip1">
+                            <a class="d-inline-block" href="~/Home/Tip1">
                                 <h2>Want to turn your kitchen and garden waste into ‘black gold’?</h2>
                             </a>
                             <p style="margin-bottom: 0px;">
                                 Do you like the idea of composting but haven’t tried it because it seems too difficult? Put simply, composting breaks down organic matter, which is anything that was once living. This means you are recycling vital nutrients so you can use them to improve the quality of your soil. Up to half of the waste thrown out by the average Australian household is organic material.
                             </p>
-                            <div style="text-align:right"><a href="~/Tips/Tip1">Read ></a></div>
+                            <div style="text-align:right"><a href="~/Home/Tip1">Read ></a></div>
                         </div>
                     </article>
                 </div>
@@ -46,17 +44,17 @@
                     <aside class="single_sidebar_widget popular_post_widget">
                         <h3 class="widget_title">Category</h3>
                         <div class="media post_item">
-                            <a href="~/Tips/Tip1"><img src="~/img/Tip/tip1.jpg" alt="post" style="height: 80px; width: 80px;"></a>
+                            <a href="~/Home/Tip1"><img src="~/img/Tip/tip1.jpg" alt="post" style="height: 80px; width: 80px;"></a>
                             <div class="media-body">
-                                <a href="~/Tips/Tip1">
+                                <a href="~/Home/Tip1">
                                     <h3>Want to turn your kitchen and garden waste into ‘black gold’?</h3>
                                 </a>
                             </div>
                         </div>
                         <div class="media post_item">
-                            <a href="~/Tips/Tip2"><img src="~/img/Tip/tip2.jpg" alt="post" style="height: 80px; width: 80px;"></a>
+                            <a href="~/Home/Tip2"><img src="~/img/Tip/tip2.jpg" alt="post" style="height: 80px; width: 80px;"></a>
                             <div class="media-body">
-                                <a href="~/Tips/Tip2">
+                                <a href="~/Home/Tip2">
                                     <h3>Are you new to composting?</h3>
                                 </a>
                             </div>
@@ -77,16 +75,16 @@
                 <div class="blog_left_sidebar">
                     <article class="blog_item">
                         <div class="blog_item_img">
-                            <a href="~/Tips/Tip2"><img class="card-img rounded-0" src="~/img/Tip/tip2.jpg" alt="" style="height: 365px;"></a>
+                            <a href="~/Home/Tip2"><img class="card-img rounded-0" src="~/img/Tip/tip2.jpg" alt="" style="height: 365px;"></a>
                         </div>
                         <div class="blog_details">
-                            <a class="d-inline-block" href="~/Tips/Tip2">
+                            <a class="d-inline-block" href="~/Home/Tip2">
                                 <h2>Are you new to composting?</h2>
                             </a>
                             <p style="margin-bottom: 0px;">
-                                For anyone new to composting, or those who simply want to improve their existing compost heaps, we’ve prepared a round-up of top tips and great stuff that will help you get on top of your compost.
+                                For anyone new to composting, or those who simply want to improve their existing compost heaps, we’ve prepared a round-up of top Home and great stuff that will help you get on top of your compost.
                             </p>
-                            <div style="text-align:right"><a href="~/Tips/Tip2">Read ></a></div>
+                            <div style="text-align:right"><a href="~/Home/Tip2">Read ></a></div>
                         </div>
                     </article>
                 </div>
@@ -94,7 +92,7 @@
         </div>
     </div>
 </section>           
-            <!--================Tips Area end=================-->
+            <!--================Tip Area end=================-->
             <!--================fk db Area start=================-->
             @*<section class="blog_area section-padding">
                     <div class="container">
@@ -110,14 +108,14 @@
                                             <div class="blog_details">
                                                 @if (item.Id == 1)
                                                 {
-                                                    <a class="d-inline-block" href="~/Tips/Tip1">
+                                                    <a class="d-inline-block" href="~/Home/Tip1">
                                                         <h2>@Html.DisplayFor(modelItem => item.Title)</h2>
                                                     </a>
-                                                    <a href="~/Tips/Tip1">Read ></a>
+                                                    <a href="~/Home/Tip1">Read ></a>
                                                 }
                                                 @if (item.Id == 2)
                                                 {
-                                                    <a class="d-inline-block" href="~/Tips/Tip2">
+                                                    <a class="d-inline-block" href="~/Home/Tip2">
                                                         <h2>@Html.DisplayFor(modelItem => item.Title)</h2>
                                                     </a>}
                                                 <p>
@@ -181,14 +179,14 @@
                                                 @if (item.Id == 1)
                                                 {
                                                     <div class="media-body">
-                                                        <a href="~/Tips/Tip1">
+                                                        <a href="~/Home/Tip1">
                                                             <h3>@Html.DisplayFor(modelItem => item.Title)</h3>
                                                         </a>
                                                     </div>}
                                                 @if (item.Id == 2)
                                                 {
                                                     <div class="media-body">
-                                                        <a href="~/Tips/Tip2">
+                                                        <a href="~/Home/Tip2">
                                                             <h3>@Html.DisplayFor(modelItem => item.Title)</h3>
                                                         </a>
                                                     </div>}

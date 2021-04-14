@@ -81,6 +81,27 @@ namespace WebApplication1.Controllers
             ViewBag.Message = "Green waste page.";
 
             return View();
-        }       
+        }
+
+        public ActionResult Tip()
+        {
+            ViewBag.Message = "Tip page.";
+
+            return View();
+        }
+
+        public ActionResult Tip1()
+        {
+            ViewBag.Message = "Tip 1 page.";
+
+            return View();
+        }
+
+        public ActionResult Tip2()
+        {
+            ViewBag.Message = "Tip 2 page.";
+
+            return View();
+        }
     }
 }

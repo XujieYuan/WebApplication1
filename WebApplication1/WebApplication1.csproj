@@ -132,33 +132,9 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\HomeController.cs" />
-    <Compile Include="Controllers\House_categoryController.cs" />
-    <Compile Include="Controllers\TipsController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Models\House_category.cs">
-      <DependentUpon>Model1.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\Model1.Context.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Model1.Context.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\Model1.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Model1.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\Model1.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Model1.edmx</DependentUpon>
-    </Compile>
-    <Compile Include="Models\Tip.cs">
-      <DependentUpon>Model1.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\webModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -354,17 +330,6 @@
     <Content Include="js\vendor\modernizr-3.5.0.min.js" />
     <Content Include="js\waypoints.min.js" />
     <Content Include="js\wow.min.js" />
-    <Content Include="Models\Model1.Context.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <LastGenOutput>Model1.Context.cs</LastGenOutput>
-      <DependentUpon>Model1.edmx</DependentUpon>
-    </Content>
-    <Content Include="Models\Model1.edmx.sql" />
-    <Content Include="Models\Model1.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <LastGenOutput>Model1.cs</LastGenOutput>
-      <DependentUpon>Model1.edmx</DependentUpon>
-    </Content>
     <Content Include="fonts\Flaticon.eot" />
     <Content Include="fonts\Flaticon.ttf" />
     <Content Include="fonts\Flaticon.woff" />
@@ -395,13 +360,6 @@
     <Content Include="fonts\themify.eot" />
     <Content Include="fonts\themify.ttf" />
     <Content Include="fonts\themify.woff" />
-    <EntityDeploy Include="Models\Model1.edmx">
-      <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>Model1.Designer.cs</LastGenOutput>
-    </EntityDeploy>
-    <Content Include="Models\Model1.edmx.diagram">
-      <DependentUpon>Model1.edmx</DependentUpon>
-    </Content>
     <Content Include="Content\bootstrap.min.css.map" />
     <Content Include="Content\bootstrap.css.map" />
     <Content Include="Content\bootstrap-reboot.min.css.map" />
@@ -551,20 +509,11 @@
     <Content Include="Views\Home\GreenWaste.cshtml" />
     <Content Include="Views\Home\LSWaste.cshtml" />
     <Content Include="Views\Home\test.cshtml" />
-    <Content Include="Views\House_category\Create.cshtml" />
-    <Content Include="Views\House_category\Delete.cshtml" />
-    <Content Include="Views\House_category\Details.cshtml" />
-    <Content Include="Views\House_category\Edit.cshtml" />
-    <Content Include="Views\House_category\Index.cshtml" />
-    <Content Include="Views\Tips\Create.cshtml" />
-    <Content Include="Views\Tips\Delete.cshtml" />
-    <Content Include="Views\Tips\Details.cshtml" />
-    <Content Include="Views\Tips\Edit.cshtml" />
-    <Content Include="Views\Tips\Index.cshtml" />
+    <Content Include="Views\Home\Tip.cshtml" />
     <Content Include="Views\Home\EWaste.cshtml" />
     <Content Include="Views\Home\ConstructionDebris.cshtml" />
-    <Content Include="Views\Tips\Tip1.cshtml" />
-    <Content Include="Views\Tips\Tip2.cshtml" />
+    <Content Include="Views\Home\Tip1.cshtml" />
+    <Content Include="Views\Home\Tip2.cshtml" />
     <Content Include="Views\Home\Waste.cshtml" />
     <Content Include="Scripts\jquery-3.6.0.slim.min.map" />
     <Content Include="Scripts\jquery-3.6.0.min.map" />
@@ -588,6 +537,9 @@
   </ItemGroup>
   <ItemGroup>
     <TypeScriptCompile Include="Scripts\index.d.ts" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Models\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
