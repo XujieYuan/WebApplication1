@@ -123,5 +123,13 @@ namespace WebApplication1.Controllers
             }
             base.Dispose(disposing);
         }
+
+        public ActionResult Quiz()
+        {
+            ViewBag.Message = "Quiz page.";
+
+            return View(db.Results.ToList());
+        }
+
     }
 }

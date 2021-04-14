@@ -179,6 +179,7 @@
     <Content Include="css\magnific-popup.css" />
     <Content Include="css\nice-select.css" />
     <Content Include="css\owl.carousel.min.css" />
+    <Content Include="css\quiz.css" />
     <Content Include="css\reset.css" />
     <Content Include="css\slicknav.css" />
     <Content Include="css\style.css" />
@@ -569,6 +570,7 @@
     <Content Include="Views\Results\Details.cshtml" />
     <Content Include="Views\Results\Edit.cshtml" />
     <Content Include="Views\Results\Index.cshtml" />
+    <Content Include="Views\Results\Quiz.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
