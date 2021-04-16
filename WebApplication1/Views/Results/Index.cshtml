@@ -18,19 +18,19 @@
         <div class="modal-content">
             <div class="modal-header">
                 <div id="question1">
-                    <h3><span class="label label-warning" id="qid">1</span> QUESTION 1</h3>
+                    <h3 style="line-height:36px"><span class="label label-warning" id="qid">1</span> What should not be contained in your composting list?</h3>
                 </div>
                 <div id="question2" style="display:none;">
-                    <h3><span class="label label-warning" id="qid">2</span> QUESTION 2</h3>
+                    <h3 style="line-height:36px"><span class="label label-warning" id="qid">2</span> Whenever your kitchen scraps container is full you should:</h3>
                 </div>
                 <div id="question3" style="display:none;">
-                    <h3><span class="label label-warning" id="qid">3</span> QUESTION 3</h3>
+                    <h3 style="line-height:36px"><span class="label label-warning" id="qid">3</span> If your compost starts to smell what are the next step you should do?</h3>
                 </div>
                 <div id="question4" style="display:none;">
-                    <h3><span class="label label-warning" id="qid">4</span> QUESTION 4</h3>
+                    <h3 style="line-height:36px"><span class="label label-warning" id="qid">4</span> Which of the following denotes compost is ready?</h3>
                 </div>
                 <div id="question5" style="display:none;">
-                    <h3><span class="label label-warning" id="qid">5</span> QUESTION 5</h3>
+                    <h3 style="line-height:36px"><span class="label label-warning" id="qid">5</span> What is the best place you should put your compost bin?</h3>
                 </div>
             </div>
             <div class="modal-body">
@@ -54,30 +54,38 @@
                     <label class="element-animation1 btn btn-lg btn-primary btn-block"><span class="btn-label"><i class="glyphicon glyphicon-chevron-right"></i></span> <input type="radio" name="q_answer" value=1>1 Yes</label>
                     <label class="element-animation2 btn btn-lg btn-primary btn-block"><span class="btn-label"><i class="glyphicon glyphicon-chevron-right"></i></span> <input type="radio" name="q_answer" value=0>2 No</label>
                 </div>
+
+                <div class="btn-default" id="correct" style="display:none">
+                    <h3 style="color:forestgreen">Correct</h3>
+                </div>
+                <div class="btn-default" id="incorrect" style="display:none">
+                    <h3 style="color:red">Incorrect</h3>
+                </div>              
+
                 <div id="answer1" style="display:none;">
-                    <p>
+                    <h3>
                         Fundamental Awareness (basic knowledge)
-                    </p>
+                    </h3>
                 </div>
                 <div id="answer2" style="display:none;">
-                    <p>
+                    <h3>
                         Novice (limited experience)
-                    </p>
+                    </h3>
                 </div>
                 <div id="answer3" style="display:none;">
-                    <p>
+                    <h3>
                         Intermediate (practical application)
-                    </p>
+                    </h3>
                 </div>
                 <div id="answer4" style="display:none;">
-                    <p>
+                    <h3>
                         Advanced (applied theory)
-                    </p>
+                    </h3>
                 </div>
                 <div id="answer5" style="display:none;">
-                    <p>
+                    <h3>
                         Expert (recognized authority)
-                    </p>
+                    </h3>
                 </div>
             </div>
             <div class="modal-footer text-muted">
@@ -116,15 +124,22 @@
         $("label.btn").on('click', function () {
             var currentQuestion = '#question' + i;//'#question1'
             var currentQuiz = '#quiz' + i;
-            ++i;
+            ++i;           
             var nextQuestion = '#question' + i;//'#question2'
             var nextQuiz = '#quiz' + i;
             var choice = $(this).find('input:radio').val();
+            if (parseInt(choice) === 1) {
+                $('#correct').fadeIn();
+                $('#correct').fadeOut();
+            } else {
+                $('#incorrect').fadeIn();
+                $('#incorrect').fadeOut();
+            }
             totalCount += parseInt(choice);
             $(currentQuiz).fadeOut();
             $(nextQuiz).fadeIn();
             $(currentQuestion).hide();
-            $(nextQuestion).show();            
+            $(nextQuestion).show();           
             if (i === 6) {
                 if (totalCount === 0) {
                     $('#answer1').fadeIn();
