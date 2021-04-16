@@ -19,6 +19,23 @@ namespace WebApplication1.Controllers
         {
             return View(db.Results.ToList());
         }
+        public ActionResult Quiz(int id)
+        {
+            ViewBag.Message = "Quiz page.";
+            Update(id);
+            return View(db.Results.ToList());
+        }
+
+        public void Update(int id)
+        {
+            Result result = db.Results.Find(id);
+            result.Count += 1;
+            if (ModelState.IsValid)
+            {
+                db.Entry(result).State = EntityState.Modified;
+                db.SaveChanges();
+            }
+        }
 
         // GET: Results/Details/5
         public ActionResult Details(int? id)
@@ -123,13 +140,5 @@ namespace WebApplication1.Controllers
             }
             base.Dispose(disposing);
         }
-
-        public ActionResult Quiz()
-        {
-            ViewBag.Message = "Quiz page.";
-
-            return View(db.Results.ToList());
-        }
-
     }
 }

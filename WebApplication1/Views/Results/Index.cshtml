@@ -16,6 +16,12 @@
 <div class="quiz_area">
     <div class="modal-dialog">
         <div class="modal-content">
+            <div class="btn-default" id="correct" style="display:none">
+                <h3 style="color:forestgreen; padding-left:20px;">Correct</h3>
+            </div>
+            <div class="btn-default" id="incorrect" style="display:none">
+                <h3 style="color:red; padding-left:20px;">Incorrect</h3>
+            </div>
             <div class="modal-header">
                 <div id="question1">
                     <h3 style="line-height:36px"><span class="label label-warning" id="qid">1</span> What should not be contained in your composting list?</h3>
@@ -37,12 +43,12 @@
                 </div>
             </div>
 
-            <div class="btn-default" id="correct" style="display:none">
-                <h3 style="color:forestgreen; padding-left:20px;">Correct</h3>
-            </div>
-            <div class="btn-default" id="incorrect" style="display:none">
-                <h3 style="color:red; padding-left:20px;">Incorrect</h3>
-            </div>
+            @*<div class="btn-default" id="correct" style="display:none">
+            <h3 style="color:forestgreen; padding-left:20px;">Correct</h3>
+        </div>
+        <div class="btn-default" id="incorrect" style="display:none">
+            <h3 style="color:red; padding-left:20px;">Incorrect</h3>
+        </div>*@
 
             <div class="modal-body">
                 <div class="quiz" id="quiz1" data-toggle="buttons">
@@ -178,10 +184,10 @@
             var choice = $(this).find('input:radio').val();
             if (parseInt(choice) === 1) {
                 $('#correct').fadeIn();
-                $('#correct').fadeOut();
+                $('#correct').fadeOut(800);
             } else {
                 $('#incorrect').fadeIn();
-                $('#incorrect').fadeOut();
+                $('#incorrect').fadeOut(800);
             }
             totalCount += parseInt(choice);
             $(currentQuiz).fadeOut();
