@@ -32,7 +32,18 @@
                 <div id="question5" style="display:none;">
                     <h3 style="line-height:36px"><span class="label label-warning" id="qid">5</span> What is the best place you should put your compost bin?</h3>
                 </div>
+                <div id="question6" style="display:none;">
+                    <h3 style="line-height:36px"><span class="label label-warning" id="qid">5</span> Which is organic waste?</h3>
+                </div>
             </div>
+
+            <div class="btn-default" id="correct" style="display:none">
+                <h3 style="color:forestgreen; padding-left:20px;">Correct</h3>
+            </div>
+            <div class="btn-default" id="incorrect" style="display:none">
+                <h3 style="color:red; padding-left:20px;">Incorrect</h3>
+            </div>
+
             <div class="modal-body">
                 <div class="quiz" id="quiz1" data-toggle="buttons">
                     <label class="element-animation1 btn btn-lg btn-primary btn-block"><span class="btn-label"><i class="glyphicon glyphicon-chevron-right"></i></span> <input type="radio" name="q_answer" value=0>A. Fruits and vegetable waste</label>
@@ -64,36 +75,35 @@
                     <label class="element-animation2 btn btn-lg btn-primary btn-block"><span class="btn-label"><i class="glyphicon glyphicon-chevron-right"></i></span> <input type="radio" name="q_answer" value=0>C. near your back door just for convenience</label>
                     <label class="element-animation2 btn btn-lg btn-primary btn-block"><span class="btn-label"><i class="glyphicon glyphicon-chevron-right"></i></span> <input type="radio" name="q_answer" value=1>D. a surface of earth, sand, or gravel that drains</label>
                 </div>
-
-                <div class="btn-default" id="correct" style="display:none">
-                    <h3 style="color:forestgreen">Correct</h3>
+                <div class="quiz" id="quiz6" data-toggle="buttons" style="display:none;">
+                    <label class="element-animation1 btn btn-lg btn-primary btn-block"><span class="btn-label"><i class="glyphicon glyphicon-chevron-right"></i></span> <input type="radio" name="q_answer" value=0>A. Plastic bags</label>
+                    <label class="element-animation2 btn btn-lg btn-primary btn-block"><span class="btn-label"><i class="glyphicon glyphicon-chevron-right"></i></span> <input type="radio" name="q_answer" value=0>B. Water bottles</label>
+                    <label class="element-animation2 btn btn-lg btn-primary btn-block"><span class="btn-label"><i class="glyphicon glyphicon-chevron-right"></i></span> <input type="radio" name="q_answer" value=1>C. Newspaper</label>
+                    <label class="element-animation2 btn btn-lg btn-primary btn-block"><span class="btn-label"><i class="glyphicon glyphicon-chevron-right"></i></span> <input type="radio" name="q_answer" value=0>D. Battery</label>
                 </div>
-                <div class="btn-default" id="incorrect" style="display:none">
-                    <h3 style="color:red">Incorrect</h3>
-                </div>              
 
                 <div id="answer1" style="display:none;">
-                    <h3>
+                    <h3 style="margin-top:0px;">
                         Fundamental Awareness (basic knowledge)
                     </h3>
                 </div>
                 <div id="answer2" style="display:none;">
-                    <h3>
+                    <h3 style="margin-top:0px;">
                         Novice (limited experience)
                     </h3>
                 </div>
                 <div id="answer3" style="display:none;">
-                    <h3>
+                    <h3 style="margin-top:0px;">
                         Intermediate (practical application)
                     </h3>
                 </div>
                 <div id="answer4" style="display:none;">
-                    <h3>
+                    <h3 style="margin-top:0px;">
                         Advanced (applied theory)
                     </h3>
                 </div>
                 <div id="answer5" style="display:none;">
-                    <h3>
+                    <h3 style="margin-top:0px;">
                         Expert (recognized authority)
                     </h3>
                 </div>
@@ -120,10 +130,38 @@
 </div>
 
 <style>
+    h2,h3{
+        font-family:"Yeseva One"
+    }
+
     .quiz_area{
         margin-top: 20px;
         margin-bottom: 30px;
     }
+
+    .label-warning{
+        background-color:#ff6a00;
+    }
+
+    .btn-primary{
+        background-color:#12b322; 
+        border-color:#12b322;
+    }
+
+    .btn-primary:hover{
+        background-color:#088122; 
+        border-color:#088122;
+    }
+
+    .btn-primary:not(:disabled):not(.disabled):active{
+        background-color:#38f046; 
+        border-color:#38f046;
+    }
+
+    .btn-primary:not(:disabled):not(.disabled).active{
+        background-color:#4ad031; 
+        border-color:#4ad031;
+    } 
 </style>
 <!-- quiz_area_end -->
 
@@ -150,7 +188,7 @@
             $(nextQuiz).fadeIn();
             $(currentQuestion).hide();
             $(nextQuestion).show();           
-            if (i === 6) {
+            if (i === 7) {
                 if (totalCount === 0) {
                     $('#answer1').fadeIn();
                     $('#finish1').fadeIn();
