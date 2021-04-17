@@ -19,11 +19,17 @@ namespace WebApplication1.Controllers
         {
             return View(db.Results.ToList());
         }
+
         public ActionResult Quiz(int id)
         {
             ViewBag.Message = "Quiz page.";
             Update(id);
             return View(db.Results.ToList());
+        }
+
+        public ActionResult Intro()
+        {
+            return View();
         }
 
         public void Update(int id)
