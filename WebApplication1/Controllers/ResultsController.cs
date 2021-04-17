@@ -32,6 +32,31 @@ namespace WebApplication1.Controllers
             return View();
         }
 
+        public ActionResult Fundamental()
+        {
+            return View();
+        }
+
+        public ActionResult Novice()
+        {
+            return View();
+        }
+
+        public ActionResult Intermediate()
+        {
+            return View();
+        }
+
+        public ActionResult Advanced()
+        {
+            return View();
+        }
+
+        public ActionResult Expert()
+        {
+            return View();
+        }
+
         public void Update(int id)
         {
             Result result = db.Results.Find(id);

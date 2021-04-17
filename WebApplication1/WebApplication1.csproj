@@ -572,6 +572,11 @@
     <Content Include="Views\Results\Index.cshtml" />
     <Content Include="Views\Results\Quiz.cshtml" />
     <Content Include="Views\Results\Intro.cshtml" />
+    <Content Include="Views\Results\Fundamental.cshtml" />
+    <Content Include="Views\Results\Novice.cshtml" />
+    <Content Include="Views\Results\Intermediate.cshtml" />
+    <Content Include="Views\Results\Advanced.cshtml" />
+    <Content Include="Views\Results\Expert.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
