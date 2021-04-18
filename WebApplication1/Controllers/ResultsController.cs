@@ -12,7 +12,8 @@ namespace WebApplication1.Controllers
 {
     public class ResultsController : Controller
     {
-        private Model1Container3 db = new Model1Container3();
+        //private Model1Container3 db = new Model1Container3();
+        private webModel1 db = new webModel1();
 
         // GET: Results
         public ActionResult Index()
