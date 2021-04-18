@@ -212,15 +212,8 @@
     <Content Include="img\banner\prise_bg.png" />
     <Content Include="img\blog\author.png" />
     <Content Include="img\blog\blog_1.png" />
-    <Content Include="img\blog\blog_2.png" />
-    <Content Include="img\blog\blog_3.png" />
-    <Content Include="img\blog\blog_4.png" />
     <Content Include="img\blog\learn_about_bg.png" />
     <Content Include="img\blog\single_blog_1.png" />
-    <Content Include="img\blog\single_blog_2.png" />
-    <Content Include="img\blog\single_blog_3.png" />
-    <Content Include="img\blog\single_blog_4.png" />
-    <Content Include="img\blog\single_blog_5.png" />
     <Content Include="img\blog\slide_thumb_1.png" />
     <Content Include="img\Charts\chart1.png" />
     <Content Include="img\Charts\chart2.png" />
@@ -230,8 +223,6 @@
     <Content Include="img\Charts\chart6.png" />
     <Content Include="img\Charts\chart7.png" />
     <Content Include="img\comment\comment_1.png" />
-    <Content Include="img\comment\comment_2.png" />
-    <Content Include="img\comment\comment_3.png" />
     <Content Include="img\elements\a.jpg" />
     <Content Include="img\elements\a2.jpg" />
     <Content Include="img\elements\d.jpg" />
@@ -290,35 +281,7 @@
     <Content Include="img\offers\3.png" />
     <Content Include="img\post\next.png" />
     <Content Include="img\post\post_1.png" />
-    <Content Include="img\post\post_10.png" />
-    <Content Include="img\post\post_2.png" />
-    <Content Include="img\post\post_3.png" />
-    <Content Include="img\post\post_4.png" />
-    <Content Include="img\post\post_5.png" />
-    <Content Include="img\post\post_6.png" />
-    <Content Include="img\post\post_7.png" />
-    <Content Include="img\post\post_8.png" />
-    <Content Include="img\post\post_9.png" />
-    <Content Include="img\post\preview.png" />
-    <Content Include="img\prising\1.png" />
-    <Content Include="img\prising\10.png" />
-    <Content Include="img\prising\2.png" />
-    <Content Include="img\prising\3.png" />
-    <Content Include="img\prising\4.png" />
-    <Content Include="img\prising\5.png" />
-    <Content Include="img\prising\6.png" />
-    <Content Include="img\prising\7.png" />
-    <Content Include="img\prising\8.png" />
-    <Content Include="img\prising\9.png" />
-    <Content Include="img\service\1.png" />
-    <Content Include="img\service\2.png" />
-    <Content Include="img\service\3.png" />
     <Content Include="img\team\2.png" />
-    <Content Include="img\team\team1.png" />
-    <Content Include="img\team\team2.png" />
-    <Content Include="img\team\team3.png" />
-    <Content Include="img\team\team4.png" />
-    <Content Include="img\team\team5.png" />
     <Content Include="img\team\team6.jpg" />
     <Content Include="img\testmonial\1.png" />
     <Content Include="img\Tip\backyard.jpg" />
@@ -592,7 +555,9 @@
   <ItemGroup>
     <TypeScriptCompile Include="Scripts\index.d.ts" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="img\prising\" />
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
