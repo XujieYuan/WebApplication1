@@ -262,11 +262,7 @@
     <Content Include="img\Explore\medical.jpg" />
     <Content Include="img\Explore\medical_sm.png" />
     <Content Include="img\Explore\orchard-1872997_1920.jpg" />
-    <Content Include="img\Explore\pollution-3441119_1920.jpg" />
-    <Content Include="img\Explore\scrap-iron-404081_1920.jpg" />
     <Content Include="img\Explore\vegetables-752153_1920.jpg" />
-    <Content Include="img\Explore\waste_large.png" />
-    <Content Include="img\Explore\waste_small.png" />
     <Content Include="img\favicon.ico" />
     <Content Include="img\favicon.png" />
     <Content Include="img\footer-logo.png" />
@@ -285,7 +281,11 @@
     <Content Include="img\team\team6.jpg" />
     <Content Include="img\testmonial\1.png" />
     <Content Include="img\Tip\backyard.jpg" />
+    <Content Include="img\Tip\celebrate.jpg" />
+    <Content Include="img\Tip\harvest.jpg" />
+    <Content Include="img\Tip\insect.jpg" />
     <Content Include="img\Tip\pail.jpg" />
+    <Content Include="img\Tip\time.jpg" />
     <Content Include="img\Tip\tip1.jpg" />
     <Content Include="img\Tip\tip4.jpg" />
     <Content Include="img\Tip\tip3.jpg" />
