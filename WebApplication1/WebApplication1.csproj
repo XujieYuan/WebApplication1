@@ -321,12 +321,15 @@
     <Content Include="img\team\team5.png" />
     <Content Include="img\team\team6.jpg" />
     <Content Include="img\testmonial\1.png" />
+    <Content Include="img\Tip\backyard.jpg" />
+    <Content Include="img\Tip\pail.jpg" />
     <Content Include="img\Tip\tip1.jpg" />
     <Content Include="img\Tip\tip4.jpg" />
     <Content Include="img\Tip\tip3.jpg" />
     <Content Include="img\Tip\tip2.jpg" />
     <Content Include="img\Tip\tip5.jpg" />
     <Content Include="img\Tip\tip6.jpg" />
+    <Content Include="img\Tip\tumbler.png" />
     <Content Include="js\ajax-form.js" />
     <Content Include="js\bootstrap.min.js" />
     <Content Include="js\contact.js" />
