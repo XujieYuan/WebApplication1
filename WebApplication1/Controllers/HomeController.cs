@@ -103,5 +103,12 @@ namespace WebApplication1.Controllers
 
             return View();
         }
+
+        public ActionResult LifeScene()
+        {
+            ViewBag.Message = "Interaction page.";
+
+            return View();
+        }
     }
 }
