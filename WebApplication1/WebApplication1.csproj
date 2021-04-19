@@ -274,6 +274,7 @@
     <Content Include="img\gallery\2.png" />
     <Content Include="img\gallery\3.png" />
     <Content Include="img\gallery\video.png" />
+    <Content Include="img\interaction\int_backyard.jpg" />
     <Content Include="img\page-icon.png" />
     <Content Include="img\logo.png" />
     <Content Include="img\offers\1.png" />
