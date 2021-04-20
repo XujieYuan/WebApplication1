@@ -1258,8 +1258,8 @@ h3 {
 
 /* line 1, ../../Arafath/CL/january 2020/238. Barber/HTML/scss/_about.scss */
 .about_area {
-    padding-top: 150px;
-    padding-bottom: 150px;
+    padding-top: 50px;
+    padding-bottom: 50px;
     background: #edf5e9;
 }
 
@@ -1649,7 +1649,7 @@ h3 {
 .service_area .single_service .service_content {
     position: relative;
     padding: 64px 60px;
-    border: 1px solid #ffd1af;
+    border: 1px solid #12b322;
     border-top: none;
     margin-bottom: 30px;
 }

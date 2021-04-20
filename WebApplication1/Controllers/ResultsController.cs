@@ -33,6 +33,11 @@ namespace WebApplication1.Controllers
             return View();
         }
 
+        public ActionResult Level()
+        {
+            return View();
+        }
+
         public ActionResult Fundamental()
         {
             return View();
