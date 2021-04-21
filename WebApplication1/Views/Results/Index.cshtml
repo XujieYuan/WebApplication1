@@ -1,4 +1,4 @@
-
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
 <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
 <!-- bradcam_area_start -->
@@ -80,7 +80,7 @@
                     <label class="element-animation2 btn btn-lg btn-primary btn-block" style="margin-bottom:12px;"><span class="btn-label"><i class="glyphicon glyphicon-chevron-right"></i></span> <input type="radio" name="q_answer" value=0>D. Battery</label>
                 </div>
 
-                <div>
+                @*<div>
                     <p>
                         <a id="hint1" class="btn btn-primary" data-toggle="collapse" href="#hintcontent1" role="button" aria-expanded="false" aria-controls="hintcontent1">
                             Hints
@@ -89,7 +89,6 @@
                     </p>
                     <div class="collapse" id="hintcontent1">
                         <div class="card card-body">
-                            
                             <p>All food and drink scraps including chilli, garlic, citrus, grains, dairy and tiny amounts of meat. Food scraps are wet and high in nitrogen which helps compost break down. Substitutes include: manure, fresh grass clippings and seaweed.</p>
                             <p>All grass and plant clippings, leaves, mulch and wood chips. Garden scraps are dry and high in carbon so they’ll stop your compost from smelling. Substitutes include: shredded paper, cardboard, coffee husks and grain husks.</p>
                             <p>Avoid adding more than 100g of meat, tofu, dairy, eggs or oils at one time. Technically anything organic (once living) can be composted. However, in a small backyard compost bin it's best to be careful and follow these guidelines.</p>
@@ -97,6 +96,7 @@
                         </div>
                     </div>
                 </div>
+                
                 <div>
                     <p>
                         <a id="hint2" class="btn btn-primary" data-toggle="collapse" href="#hintcontent2" role="button" aria-expanded="false" aria-controls="hintcontent2" style="display:none;">
@@ -176,7 +176,7 @@
                             <a href="~/Home/Tip" target="_blank" class="btn btn-info" role="button">Click to learn more!</a>
                         </div>
                     </div>
-                </div>
+                </div>*@
 
 
 
@@ -290,13 +290,13 @@
         $("label.btn").on('click', function () {
             var currentQuestion = '#question' + i;//'#question1'
             var currentQuiz = '#quiz' + i;
-            var currentHint = '#hint' + i;
-            var currentContent = '#hintcontent' + i;
+            //var currentHint = '#hint' + i;
+            //var currentContent = '#hintcontent' + i;
             ++i;           
             var nextQuestion = '#question' + i;//'#question2'
             var nextQuiz = '#quiz' + i;
-            var nextHint = '#hint' + i;
-            var nextContent = '#hintcontent' + i;
+            //var nextHint = '#hint' + i;
+            //var nextContent = '#hintcontent' + i;
             var choice = $(this).find('input:radio').val();
             if (parseInt(choice) === 1) {
                 $('#correct').fadeIn();
@@ -308,10 +308,10 @@
             totalCount += parseInt(choice);
             $(currentQuiz).fadeOut();
             $(nextQuiz).fadeIn();
-            $(currentHint).fadeOut();
-            $(nextHint).fadeIn();
-            $(currentContent).hide();
-            
+            //$(currentHint).fadeOut();
+            //$(nextHint).fadeIn();
+            //$(currentContent).hide();
+            //$(nextContent).show();
             $(currentQuestion).hide();
             $(nextQuestion).show();           
             if (i === 7) {
