@@ -1,4 +1,4 @@
-﻿@*@{
+@*@{
     ViewBag.Title = "Intro";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
@@ -16,29 +16,125 @@
 </div>
 <!-- bradcam_area_end -->
 
-<div class="container">
-    <div class="row justify-content-center">
-        <div class="col-xl-8">
-            <div class="section_title mb-20 text-center">
-                <h3 style="margin-top:21px;">
-                    Quiz Guideline
-                </h3>
-                <hr />
-                <p style="font-size:18px;">
-                    This is a test of your knowledge about composting and recycling.
-                    There are some simple questions.
-                    According to the final test results, we will classify you into five different levels.
-                    Depending on your level, we will provide you with different composting tips.
-                    <br />
-                    <br />
-                    If you wish, you can record your test results and upload them to our database by click 'Results'.
-                    At the same time, you can also see the statistics of the test results from others.
-                    Now, you can click 'Start' to test, or click 'Skip' to skip the phase and select the level by yourself.
-                </p>
-                <a href="~/Results/Index" class="btn btn-primary btn-lg btn-block" style="background-color:#12B322; border-color:#12B322; margin-bottom:12px;">Start</a>
-                <a href="~/Results/Level" class="btn btn-primary btn-lg btn-block" style="background-color:#12B322; border-color:#12B322; margin-bottom:12px;">Skip</a>             
-            </div>
-            <a href="~/Home/Index" class="btn-link" style="font-size:20px; color:#12B322;">< Homepage</a>
+
+<div class="container-fluid mt-5 mb-5">
+    <div class="row">
+        <div class="col-md-2">
         </div>
+        <div class="col-md-4">
+            <div class="col max-mb-30 aos-init aos-animate" data-aos="fade-up">
+                <a href="~/Results/Fundamental" class="icon-box text-center" data-bg-color="#fff" style="background-color: rgb(255, 255, 255);" data-abc="true">
+                    <div class="icon"> <img src="~/img/tutorialicon.png" width="220"> </div>
+                    <div class="content">
+                        <h3 class="title fz-20">Tutorial</h3>
+                        <div class="desc">
+                            <p>learn composting from the fundamental level to expert level step by step.</p>
+                            <p>Introduce traditional composting and recycling process. </p>
+                        </div> <span class="link">Start here <i class="fa fa-arrow-right"></i></span>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="col max-mb-30 aos-init aos-animate" data-aos="fade-up">
+                <a href="~/Results/Index" class="icon-box text-center" data-bg-color="#fff" style="background-color: rgb(255, 255, 255);" data-abc="true">
+                    <div class="icon"> <img src="~/img/quizicon.png" width="220" alt=""> </div>
+                    <div class="content">
+                        <h3 class="title fz-20">Do the quiz</h3>
+                        <div class="desc">
+                            <p> This is a test of your knowledge about composting and recycling.</p>
+                            <p>  Depending on your level, we will provide you with corresponding composting tips.</p>
+                        </div> <span class="link">Start here <i class="fa fa-arrow-right"></i></span>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="col-md-2">
+        </div>
+
+
     </div>
-</div>
+    </div>
+
+<style>
+    body {
+        background-color: #d6d2d2;
+        font-family: "Poppins", sans-serif;
+        font-weight: 300
+    }
+    .icon-box {
+        position: relative;
+        display: block;
+        padding: 40px 20px 30px;
+        -webkit-transition: all .25s cubic-bezier(.645, .045, .355, 1);
+        -o-transition: all .25s cubic-bezier(.645, .045, .355, 1);
+        transition: all .25s cubic-bezier(.645, .045, .355, 1);
+        border-radius: 5px;
+        z-index: 99;
+        text-decoration: none
+    }
+
+    .col-md-4 {
+        margin-top: 10px
+    }
+
+    .icon-box .icon {
+        margin-bottom: 24px
+    }
+
+    .icon-box:hover {
+        z-index: 1;
+        background-color: #fff;
+        -webkit-box-shadow: 0 0 40px rgba(51, 51, 51, .1);
+        box-shadow: 0 0 40px rgba(51, 51, 51, .1)
+    }
+
+    .icon-box .content .title.fz-20 {
+        font-size: 20px
+    }
+
+    .icon-box .content .title {
+        font-size: 24px;
+        line-height: 1.5;
+        margin: 0;
+        color: #3f3a64
+    }
+
+    .icon-box .content .desc {
+        margin-top: 10px
+    }
+
+        .icon-box .content .desc p {
+            line-height: 1.6;
+            color: #696969
+        }
+
+    p:last-child {
+        margin-bottom: 0
+    }
+
+    .icon-box:hover .content .link {
+        color: #20ad96
+    }
+
+    .icon-box .content .link {
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 1;
+        display: -webkit-inline-box;
+        display: -ms-inline-flexbox;
+        display: inline-flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        margin-top: 34px;
+        padding: 5px 0;
+        color: #8c89a2
+    }
+
+        .icon-box .content .link i {
+            font-size: 16px;
+            line-height: 14px;
+            margin-left: 14px
+        }
+</style>
