@@ -63,6 +63,16 @@ namespace WebApplication1.Controllers
             return View();
         }
 
+        public ActionResult ExpertExample()
+        {
+            return View();
+        }
+
+        public ActionResult Tutorial()
+        {
+            return View();
+        }
+
         public void Update(int id)
         {
             Result result = db.Results.Find(id);

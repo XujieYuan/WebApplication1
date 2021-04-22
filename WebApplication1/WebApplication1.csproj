@@ -558,6 +558,8 @@
     <Content Include="Views\Results\Expert.cshtml" />
     <Content Include="Views\Home\LifeScene.cshtml" />
     <Content Include="Views\Results\Level.cshtml" />
+    <Content Include="Views\Results\ExpertExample.cshtml" />
+    <Content Include="Views\Results\Tutorial.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
