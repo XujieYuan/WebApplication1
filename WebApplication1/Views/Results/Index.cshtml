@@ -585,7 +585,7 @@
                         if (l == 10) {
                             $('#confirmBtn').fadeIn();
                             $('#completeBtn').fadeIn();
-                            document.getElementById("completeBtn").disabled = false;
+                            document.getElementById("completeBtn").disabled = true;
                         } else {
                             $('#confirmBtn').fadeIn();
                             $('#nextBtn').fadeIn();
@@ -616,6 +616,7 @@
         var youAnswer = document.getElementById("yourAnswer");
         document.getElementById("confirmBtn").disabled = true;
         document.getElementById("nextBtn").disabled = false;
+        document.getElementById("completeBtn").disabled = false;
         if (parseInt(choiceValue) === 4 || parseInt(choiceValue) === 8 || parseInt(choiceValue) === 12 || parseInt(choiceValue) === 14 || parseInt(choiceValue) === 20 || parseInt(choiceValue) === 23 || parseInt(choiceValue) === 25 || parseInt(choiceValue) === 30 || parseInt(choiceValue) === 34 || parseInt(choiceValue) === 39) {
             var currentAnswer = document.getElementById("correct");
             $(youAnswer).fadeIn();
