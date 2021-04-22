@@ -42,37 +42,75 @@
 
 <!-- new data_area_start -->
 <div id="data" align="center" style="margin-top:55px; margin-bottom:25px;">
-    <div class='tableauPlaceholder' id='viz1618803488333' style='position: relative'>
+    @*<div class='tableauPlaceholder' id='viz1618803488333' style='position: relative'>
+            <noscript>
+                <a href=' '>
+                    <img alt='Organics Dashboard ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Or&#47;OrganicsDashboard_16184800696650&#47;OrganicsDashboard&#47;1_rss.png' style='border: none'>
+                </a>
+            </noscript>
+            <object class='tableauViz' style='display:none;'>
+                <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+                <param name='embed_code_version' value='3' />
+                <param name='site_root' value='' />
+                <param name='name' value='OrganicsDashboard_16184800696650&#47;OrganicsDashboard' />
+                <param name='tabs' value='no' />
+                <param name='toolbar' value='yes' />
+                <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Or&#47;OrganicsDashboard_16184800696650&#47;OrganicsDashboard&#47;1.png' />
+                <param name='animate_transition' value='yes' />
+                <param name='display_static_image' value='yes' />
+                <param name='display_spinner' value='yes' />
+                <param name='display_overlay' value='yes' />
+                <param name='display_count' value='yes' />
+                <param name='language' value='en-GB' />
+            </object>
+        </div>*@
+    <div class='tableauPlaceholder' id='viz1619075597476' style='position: relative'>
         <noscript>
             <a href=' '>
-                <img alt='Organics Dashboard ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Or&#47;OrganicsDashboard_16184800696650&#47;OrganicsDashboard&#47;1_rss.png' style='border: none'>
+                <img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Da&#47;Dashboard1_16190741861350&#47;TotalWasteManagedDashboard&#47;1_rss.png' style='border: none' />
             </a>
         </noscript>
         <object class='tableauViz' style='display:none;'>
             <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
-            <param name='embed_code_version' value='3' />
-            <param name='site_root' value='' />
-            <param name='name' value='OrganicsDashboard_16184800696650&#47;OrganicsDashboard' />
-            <param name='tabs' value='no' />
-            <param name='toolbar' value='yes' />
-            <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Or&#47;OrganicsDashboard_16184800696650&#47;OrganicsDashboard&#47;1.png' />
-            <param name='animate_transition' value='yes' />
-            <param name='display_static_image' value='yes' />
-            <param name='display_spinner' value='yes' />
-            <param name='display_overlay' value='yes' />
-            <param name='display_count' value='yes' />
-            <param name='language' value='en-GB' />
+            <param name='embed_code_version' value='3' /> <param name='site_root' value='' />
+            <param name='name' value='Dashboard1_16190741861350&#47;TotalWasteManagedDashboard' />
+            <param name='tabs' value='yes' /><param name='toolbar' value='yes' />
+            <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Da&#47;Dashboard1_16190741861350&#47;TotalWasteManagedDashboard&#47;1.png' />
+            <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' />
+            <param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' />
+            <param name='display_count' value='yes' /><param name='language' value='en-GB' />
         </object>
     </div>
 </div>
 <!-- new data_area_end -->
 <div style="margin-left:250px;"><a href="~/Results/Advanced" class="btn btn-success" style="font-size:20px; background-color:#12b322; border-color:#12b322;">< Advanced</a></div>
 <div style="margin-left:250px; margin-top:15px;"><a href="~/Results/Level" class="btn btn-success" style="font-size:20px; background-color:#12b322; border-color:#12b322;">< Levels</a></div>
-<script type='text/javascript'>
+@*<script type='text/javascript'>
     var divElement = document.getElementById('viz1618803488333');
     var vizElement = divElement.getElementsByTagName('object')[0];
     vizElement.style.width = '1400px';
     vizElement.style.height = '927px';
+    var scriptElement = document.createElement('script');
+    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+    vizElement.parentNode.insertBefore(scriptElement, vizElement);
+</script>*@
+
+<script type='text/javascript'>
+    var divElement = document.getElementById('viz1619075597476');
+    var vizElement = divElement.getElementsByTagName('object')[0];
+    if (divElement.offsetWidth > 800) {
+        vizElement.style.width = '1400px';
+        vizElement.style.height = '950px';
+    }
+    else if (divElement.offsetWidth > 500) {
+        vizElement.style.minWidth = '1400px';
+        vizElement.style.maxWidth = '100%';
+        vizElement.style.minHeight = '950px';
+        vizElement.style.maxHeight = (divElement.offsetWidth * 0.75) + 'px';
+    } else {
+        vizElement.style.width = '1400px';
+        vizElement.style.height = '950px';
+    }
     var scriptElement = document.createElement('script');
     scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
     vizElement.parentNode.insertBefore(scriptElement, vizElement);

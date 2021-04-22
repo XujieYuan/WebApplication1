@@ -275,6 +275,8 @@
     <Content Include="img\gallery\2.png" />
     <Content Include="img\gallery\3.png" />
     <Content Include="img\gallery\video.png" />
+    <Content Include="img\icons\quizicon.png" />
+    <Content Include="img\icons\tutorialicon.png" />
     <Content Include="img\interaction\back_01.jpg" />
     <Content Include="img\interaction\back_02.jpg" />
     <Content Include="img\interaction\back_03.jpg" />
