@@ -131,6 +131,7 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\ErrorController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ResultsController.cs" />
     <Compile Include="Global.asax.cs">
@@ -199,6 +200,7 @@
     <Content Include="Content\Site.css" />
     <Content Include="img\about\about_lft.png" />
     <Content Include="img\about\about_right.png" />
+    <Content Include="img\about\error-1349562_1280.png" />
     <Content Include="img\about\test.jpg" />
     <Content Include="img\background\BG1.jpg" />
     <Content Include="img\background\BG2.jpg" />
@@ -562,6 +564,7 @@
     <Content Include="Views\Results\Level.cshtml" />
     <Content Include="Views\Results\ExpertExample.cshtml" />
     <Content Include="Views\Results\Tutorial.cshtml" />
+    <Content Include="Views\Error\PageNotFound.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />

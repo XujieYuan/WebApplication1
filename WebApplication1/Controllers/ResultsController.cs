@@ -10,6 +10,7 @@ using WebApplication1.Models;
 
 namespace WebApplication1.Controllers
 {
+    [HandleError]
     public class ResultsController : Controller
     {
         //private Model1Container3 db = new Model1Container3();
