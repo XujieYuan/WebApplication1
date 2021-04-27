@@ -566,6 +566,7 @@
     <Content Include="Views\Results\Tutorial.cshtml" />
     <Content Include="Views\Error\PageNotFound.cshtml" />
     <Content Include="Views\Home\Step.cshtml" />
+    <Content Include="Views\Home\RecycleGame.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />

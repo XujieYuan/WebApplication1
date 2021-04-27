@@ -19,6 +19,11 @@ namespace WebApplication1.Controllers
             return View();
         }
 
+        public ActionResult RecycleGame()
+        {
+            return View();
+        }
+
         public ActionResult About()
         {
             ViewBag.Message = "Your application description page.";
