@@ -210,6 +210,7 @@
     <Content Include="img\background\BG4.jpg" />
     <Content Include="img\background\BG5.jpg" />
     <Content Include="img\background\math-1500720_1920.jpg" />
+    <Content Include="img\background\gameBG.jpg" />
     <Content Include="img\background\waters-3366444_1920.jpg" />
     <Content Include="img\banner\banner_about.jpg" />
     <Content Include="img\banner\banner_composting.jpg" />

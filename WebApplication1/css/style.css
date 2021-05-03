@@ -2808,6 +2808,10 @@ h3 {
     background-image: url(../img/background/waters-3366444_1920.jpg);
 }
 
+.breadcam_bg_e {
+    background-image: url(../img/background/gameBG.jpg);
+}
+
 /* line 10, ../../Arafath/CL/january 2020/238. Barber/HTML/scss/_bradcam.scss */
 .bradcam_area {
     background-size: cover;
