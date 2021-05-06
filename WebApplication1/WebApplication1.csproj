@@ -203,7 +203,10 @@
     <Content Include="img\about\about_lft.png" />
     <Content Include="img\about\about_right.png" />
     <Content Include="img\about\error-1349562_1280.png" />
-    <Content Include="img\about\test.jpg" />
+    <Content Include="img\about\food.png" />
+    <Content Include="img\about\general.png" />
+    <Content Include="img\about\glass.png" />
+    <Content Include="img\about\recycle.png" />
     <Content Include="img\background\BG1.jpg" />
     <Content Include="img\background\BG2.jpg" />
     <Content Include="img\background\BG3.jpg" />
