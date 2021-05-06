@@ -212,6 +212,7 @@
     <Content Include="img\background\BG3.jpg" />
     <Content Include="img\background\BG4.jpg" />
     <Content Include="img\background\BG5.jpg" />
+    <Content Include="img\background\mapBG.jpg" />
     <Content Include="img\background\math-1500720_1920.jpg" />
     <Content Include="img\background\gameBG.jpg" />
     <Content Include="img\background\waters-3366444_1920.jpg" />
@@ -575,6 +576,7 @@
     <Content Include="Views\Home\RecycleGame.cshtml" />
     <Content Include="Views\LoadHtml\Index.cshtml" />
     <Content Include="Views\Home\gameIntro.cshtml" />
+    <Content Include="Views\Home\Map.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
