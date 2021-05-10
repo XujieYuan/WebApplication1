@@ -1,11 +1,12 @@
 # WebApplication1
 
-Mission Green
+# Mission Green
+
 IE Team from Monash University
 
 "Composting and Recycling promise a better Future"
 
-Project Aim
+# Project Aim
 The average household garbage bin in Victoria contains around 50% organic matter mostly food and green waste. 
 New migrant parents with young kids who arrive in Victoria are unaware of handing green waste.
 And they may feel confused about Australia's composting waste recycling. 
