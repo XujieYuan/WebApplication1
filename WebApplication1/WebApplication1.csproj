@@ -262,6 +262,7 @@
     <Content Include="img\elements\primary-radio.png" />
     <Content Include="img\elements\success-check.png" />
     <Content Include="img\elements\success-radio.png" />
+    <Content Include="img\Explore\bg.png" />
     <Content Include="img\Explore\construction.jpg" />
     <Content Include="img\Explore\cons_sm.png" />
     <Content Include="img\Explore\contact.jpg" />
@@ -275,8 +276,7 @@
     <Content Include="img\Explore\LS.jpg" />
     <Content Include="img\Explore\medical.jpg" />
     <Content Include="img\Explore\medical_sm.png" />
-    <Content Include="img\Explore\orchard-1872997_1920.jpg" />
-    <Content Include="img\Explore\vegetables-752153_1920.jpg" />
+    <Content Include="img\Explore\sm.png" />
     <Content Include="img\favicon.ico" />
     <Content Include="img\favicon.png" />
     <Content Include="img\footer-logo.png" />
