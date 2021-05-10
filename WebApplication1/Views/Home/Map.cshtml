@@ -15,13 +15,31 @@
     </div>
 </div>
 <!-- bradcam_area_end -->
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-xl-8">
+            <div class="section_title mb-20 text-center">
+                <h3 style="margin-top:21px;">
+                    Map
+                </h3>
+                <hr />
+                <p style="font-size:18px; margin-bottom:30px;">
+                    We partnered with Tableau to focus on helping users find the nearest recycling bin and their bin day.
+                    There are 31 points on the map that correspond to 31 councils in Melbourne.
+                    To find relevant information, enter your home suburb or Postcode on the right.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
 <div align="center" style="margin-top:5px; margin-bottom:25px;">
-    <div class='tableauPlaceholder' id='viz1620615566706' style='position: relative'>
+    <div class='tableauPlaceholder' id='viz1620615566706' style='position:relative; width:900px; height:960px;'>
         <noscript>
             <a href=' '>
                 <img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;W9&#47;W97YMT8BZ&#47;1_rss.png' style='border: none' />
             </a>
-        </noscript><object class='tableauViz' style='display:none;'>
+        </noscript>
+        <object class='tableauViz' style='display:none;'>
             <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
             <param name='embed_code_version' value='3' />
             <param name='path' value='shared&#47;W97YMT8BZ' />
@@ -35,20 +53,27 @@
             <param name='language' value='en-GB' />
         </object>
     </div>
+    <div align="center" style="width:87%; margin-top:15px;">
+        <a href="~/Home/LifeScene" class="btn btn-success" style="font-size: 20px; background-color: #12b322; border-color: #12b322;">< Return</a>
+    </div>
+    <div align="center" style="width:87%; margin-top:15px;">
+        <a href="~/Home/Index" class="btn btn-success" style="font-size: 20px; background-color: #12b322; border-color: #12b322;">< Home</a>
+    </div>
 </div>
-@*<div align="center" style="width:87%; margin-top:15px;"><a href="~/Home/Index" class="btn btn-success" style="font-size:20px; background-color:#12b322; border-color:#12b322;">< Return</a></div>*@
 
-<script type='text/javascript'>
-    var divElement = document.getElementById('viz1620615566706');
-    var vizElement = divElement.getElementsByTagName('object')[0];
-    vizElement.style.width = '100%';
-    vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px';
-    var scriptElement = document.createElement('script');
-    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
-    vizElement.parentNode.insertBefore(scriptElement, vizElement);
-</script>
+    <script type='text/javascript'>
+        var divElement = document.getElementById('viz1620615566706');
+        var vizElement = divElement.getElementsByTagName('object')[0];
+        vizElement.style.width = '100%';
+        vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px';
+        //vizElement.style.width = '1400px';
+        //vizElement.style.height = '950px';
+        var scriptElement = document.createElement('script');
+        scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+        vizElement.parentNode.insertBefore(scriptElement, vizElement);
+    </script>
 
-@*<div align="center" class="container" style="margin-top:20px;">
-    <iframe width="800" height="700" src="https://studio.here.com/viewer/?project_id=c35d0eaf-926c-4aaf-8f8b-9e4d3502465c" frameborder="0"></iframe>
-    <div align="center" style="width:87%; margin-top:15px;"><a href="~/Home/Index" class="btn btn-success" style="font-size:20px; background-color:#12b322; border-color:#12b322;">< Return</a></div>
-</div>*@
+    @*<div align="center" class="container" style="margin-top:20px;">
+            <iframe width="800" height="700" src="https://studio.here.com/viewer/?project_id=c35d0eaf-926c-4aaf-8f8b-9e4d3502465c" frameborder="0"></iframe>
+            <div align="center" style="width:87%; margin-top:15px;"><a href="~/Home/Index" class="btn btn-success" style="font-size:20px; background-color:#12b322; border-color:#12b322;">< Return</a></div>
+        </div>*@
